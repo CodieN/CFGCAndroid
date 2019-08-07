@@ -65,7 +65,7 @@ public class ContactList extends AppCompatActivity {
 
             }
             lst.setLayoutManager(new LinearLayoutManager(this));
-            nContactAdapter = new ContactAdapter(this, contacts);
+            nContactAdapter = new ContactAdapter(this, (ArrayList<Contacts>) contacts);
             lst.setAdapter(nContactAdapter);
 
         } catch (JSONException e) {

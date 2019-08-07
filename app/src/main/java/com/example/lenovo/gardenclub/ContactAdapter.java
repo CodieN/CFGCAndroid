@@ -14,11 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.request.RequestOptions;
-import java.lang.annotation.Annotation;
 import java.util.ArrayList;
-import java.util.List;
 
 import static android.support.v7.widget.RecyclerView.*;
 
@@ -27,42 +24,32 @@ import static android.support.v7.widget.RecyclerView.*;
  */
 
 
-public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder> implements Filterable, GlideModule {
-    private List<Contacts> contacts;
-    private List<Contacts> contactsFiltered;
+public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder> implements Filterable {
+    private ArrayList<Contacts> contacts;
+    private ArrayList<Contacts> contactsFiltered;
     private Context context;
-    ValueFilter valueFilter;
+    private ValueFilter valueFilter;
     private static final String TAG = "ContactAdapter";
 
-    public ContactAdapter(@NonNull Context context, List<Contacts> contacts) {
+    ContactAdapter(@NonNull Context context, ArrayList<Contacts> contacts) {
         this.context = context;
         this.contacts = contacts;
         this.contactsFiltered = contacts;
     }
 
-    @Override
-    public String glideName() {
-        return null;
-    }
-
-    @Override
-    public Class<? extends Annotation> annotationType() {
-        return null;
-    }
-
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    class ViewHolder extends RecyclerView.ViewHolder{
         private TextView tvName;
         private TextView tvMbrStatus;
         private ImageView mImageView;
         private View parentView;
 
 
-        public ViewHolder(@NonNull View view) {
+        ViewHolder(@NonNull View view) {
             super(view);
             this.parentView = view;
-            this.tvName = (TextView) view.findViewById(R.id.nameTV);
-            this.tvMbrStatus = (TextView) view.findViewById(R.id.tv_mbrstatus);
-            this.mImageView = (ImageView) view.findViewById(R.id.imageView4);
+            this.tvName = view.findViewById(R.id.nameTV);
+            this.tvMbrStatus = view.findViewById(R.id.tv_mbrstatus);
+            this.mImageView = view.findViewById(R.id.imageView4);
         }
     }
 
@@ -73,7 +60,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
-        final Contacts contact = (Contacts) contactsFiltered.get(position);
+        final Contacts contact = contactsFiltered.get(position);
         holder.tvName.setText(contact.getName());
         holder.tvMbrStatus.setText(contact.getMbrStatus());
         String pID = contact.getPhotoID();
@@ -88,14 +75,12 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
             }
         });
 
-        if (pID != "null") {
+        if (!pID.equals("null")) {
             Glide.with(context)
                     .load("http://capefeargardenclub.org/cfgcTestingJSON/images_Testing/images/" + pID + ".jpg")
                     .apply(RequestOptions.overrideOf(100, 100))
                     .into(holder.mImageView);
 
-        } else if (pID == null) {
-            Log.d(TAG, "onBindViewHolder: photoID is null");
         } else {
             Log.d(TAG, "onBindViewHolder: photoID is 'null'");
             Glide.with(context)
@@ -126,9 +111,9 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
             if (charString.isEmpty()) {
                 contactsFiltered = contacts;
             } else {
-                List<Contacts> filteredList = new ArrayList<>();
+                ArrayList<Contacts> filteredList = new ArrayList<>();
                 for (int i = 0; i < contacts.size(); i++) {
-                    current = (Contacts) contacts.get(i);
+                    current = contacts.get(i);
                     if ((current.getName().toUpperCase().contains(charSequence.toString().toUpperCase()))) {
                         filteredList.add(current);
                     }
@@ -145,7 +130,6 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
         protected void publishResults(CharSequence constraint, FilterResults results) {
             contactsFiltered = (ArrayList<Contacts>) results.values;
             notifyDataSetChanged();
-
         }
     }
 }

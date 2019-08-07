@@ -2,7 +2,6 @@ package com.example.lenovo.gardenclub;
 
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
-import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -16,14 +15,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-import static com.example.lenovo.gardenclub.MainActivity.JSON_STRING;
-
 /**
  * Created by Joe on 3/21/2018.
  */
 
 public class BackgroundTask extends AsyncTask<String, Void, String>{
-    AlertDialog alertDialog;
+    private AlertDialog alertDialog;
+
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
@@ -48,23 +46,20 @@ public class BackgroundTask extends AsyncTask<String, Void, String>{
                 outputStream.close();
                 InputStream inputStream = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
-                String result="";
-                String line="";
+                StringBuilder result= new StringBuilder();
+                String line;
                 while((line = bufferedReader.readLine())!= null) {
-                    result += line;
+                    result.append(line);
                 }
                 bufferedReader.close();
                 inputStream.close();
                 httpURLConnection.disconnect();
-                return result;
+                return result.toString();
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-        if (type.equals("get_info")) {
-
         }
         return null;
     }

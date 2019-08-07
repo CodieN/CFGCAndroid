@@ -22,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".LoginProcess"/>
         <activity android:name=".Contact"/>
         <activity android:name=".ContactList"
                   android:windowSoftInputMode="adjustNothing">
@@ -40,8 +41,15 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".MoreInfo">
-        </activity>
+        <activity android:name=".MoreInfo"/>
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".TourActivity" />
+        <activity android:name=".MembershipActivity" />
+        <activity android:name=".ProjectsActivity" />
+        <activity android:name=".BICActivity" />
+        <activity android:name=".EventsActivity" />
+        <activity android:name=".GrantsActivity" />
+        <activity android:name=".ImpactActivity" />
+        <activity android:name=".LegacyActivity" />
     </application>
-
 </manifest>

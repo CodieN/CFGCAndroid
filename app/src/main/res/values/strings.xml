@@ -28,5 +28,35 @@
     <string name="error_save">Error: Information was not successfully saved</string>
     <string name="succ_save">Information successfully saved</string>
     <string name="cfgc_member_since">CFGC Member Since</string>
+    <string name="azalea">2020 Azalea Garden Tour</string>
+    <string name="this_box_is_going_to_contain_text_from_azalea_tour_website_with_current_year_theme">This box is going to contain text from Azalea Tour website with current year theme</string>
+    <string name="_2020_gardens_and_map">2020 Gardens and Map</string>
+    <string name="azalea_belles">Azalea Belles©</string>
+    <string name="events">Events</string>
+    <string name="this_box_is_going_to_contain_text_from_bird_islands_cruise_page_and_get_date_for_cruise">This box is going to contain text from Bird Islands cruise page and get date for cruise</string>
+    <string name="battery_island_committee">Battery Island Committee</string>
+    <string name="events">Events</string>
+    <string name="civic_impact">Civic Impact</string>
+    <string name="membership">Membership</string>
+    <string name="this_box_is_going_to_contain_text_from_battery_island_committee_info">This box is going to contain text from Battery Island Committee Info</string>
+    <string name="back_to_bird_islands_cruise">Back to Bird Islands Cruise</string>
+    <string name="this_box_is_going_to_contain_information_from_the_club_theme_page_on_website">This box is going to contain information from the Club theme page on website.</string>
+    <string name="community_projects">Community Projects</string>
+    <string name="lasting_legacy">Lasting Legacy</string>
+    <string name="grants">Grants</string>
+    <string name="community_projects">Community Projects</string>
+    <string name="this_box_is_going_to_contain_information_from_the_community_projects_page_on_website">This box is going to contain information from the Community Projects page on website.</string>
+    <string name="back_to_civic_impact">Back to Civic Impact</string>
+    <string name="this_box_is_going_to_contain_information_from_the_grant_app_page_benefits_of_grants_and_recent_grants_awarded">This box is going to contain information from the Grant app page, Benefits of Grants, and Recent Grants Awarded.</string>
+    <string name="this_box_is_going_to_contain_information_from_the_endowment_history_page_on_website">This box is going to contain information from the Endowment History page on website.</string>
+    <string name="this_box_is_going_to_contain_text_from_history_page_and_purpose_pages_from_website">This box is going to contain text from History page and Purpose pages from website.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="members_only">Members Only</string>
+    <string name="this_box_is_going_to_contain_the_contact_us_info_from_the_website">This box is going to contain the Contact Us info from the website</string>
+    <string name="back_to_membership">Back to Membership</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="welcome_to_the_membership_directory">Welcome to the Membership Directory</string>
+    <string name="username_contactemail">Username [ContactEmail]</string>
+    <string name="password">Password</string>
 
 </resources>
