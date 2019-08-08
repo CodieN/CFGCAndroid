@@ -29,6 +29,7 @@ public class BICActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 i = new Intent(BICActivity.this, EventsActivity.class);
+                startActivity(i);
             }
         });
     }

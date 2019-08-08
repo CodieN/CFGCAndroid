@@ -32,10 +32,8 @@
     <string name="this_box_is_going_to_contain_text_from_azalea_tour_website_with_current_year_theme">This box is going to contain text from Azalea Tour website with current year theme</string>
     <string name="_2020_gardens_and_map">2020 Gardens and Map</string>
     <string name="azalea_belles">Azalea Belles©</string>
-    <string name="events">Events</string>
     <string name="this_box_is_going_to_contain_text_from_bird_islands_cruise_page_and_get_date_for_cruise">This box is going to contain text from Bird Islands cruise page and get date for cruise</string>
     <string name="battery_island_committee">Battery Island Committee</string>
-    <string name="events">Events</string>
     <string name="civic_impact">Civic Impact</string>
     <string name="membership">Membership</string>
     <string name="this_box_is_going_to_contain_text_from_battery_island_committee_info">This box is going to contain text from Battery Island Committee Info</string>
@@ -44,7 +42,6 @@
     <string name="community_projects">Community Projects</string>
     <string name="lasting_legacy">Lasting Legacy</string>
     <string name="grants">Grants</string>
-    <string name="community_projects">Community Projects</string>
     <string name="this_box_is_going_to_contain_information_from_the_community_projects_page_on_website">This box is going to contain information from the Community Projects page on website.</string>
     <string name="back_to_civic_impact">Back to Civic Impact</string>
     <string name="this_box_is_going_to_contain_information_from_the_grant_app_page_benefits_of_grants_and_recent_grants_awarded">This box is going to contain information from the Grant app page, Benefits of Grants, and Recent Grants Awarded.</string>
@@ -58,5 +55,6 @@
     <string name="welcome_to_the_membership_directory">Welcome to the Membership Directory</string>
     <string name="username_contactemail">Username [ContactEmail]</string>
     <string name="password">Password</string>
+    <string name="events">Events</string>
 
 </resources>
