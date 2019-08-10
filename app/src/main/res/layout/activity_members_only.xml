@@ -36,8 +36,12 @@
     <ImageView
         android:id="@+id/jessamineFlowerImageView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
@@ -50,37 +54,33 @@
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/username_contactemail"
         android:inputType="textEmailAddress"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline36"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline35"
         tools:ignore="Autofill" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="32dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline37"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
         app:layout_constraintEnd_toEndOf="@+id/usernameEditText"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/usernameEditText"
-        app:layout_constraintTop_toTopOf="@+id/guideline36"
         tools:ignore="Autofill" />
 
     <android.support.constraint.Guideline
@@ -89,27 +89,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.2" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.78" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline37"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="629dp" />
 
     <WebView
         android:id="@+id/webview"
@@ -125,7 +104,8 @@
         android:id="@+id/submitButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
@@ -133,6 +113,5 @@
         android:text="@string/Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
-        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText" />
 </android.support.constraint.ConstraintLayout>

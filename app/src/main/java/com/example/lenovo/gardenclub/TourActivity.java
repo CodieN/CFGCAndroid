@@ -30,14 +30,14 @@ public class TourActivity extends AppCompatActivity {
         btnMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This feature will be added in the near future.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "This feature will be added in the near future.", Toast.LENGTH_SHORT).show();
             }
         });
 
         btnBelles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This feature will be added in the near future.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "This feature will be added in the near future.", Toast.LENGTH_SHORT).show();
             }
         });
     }
