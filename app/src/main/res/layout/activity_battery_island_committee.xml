@@ -64,7 +64,7 @@
         android:background="@drawable/black_border_background_settings"
         android:clickable="true"
         android:focusable="true"
-        android:text="@string/back_to_bird_islands_cruise"
+        android:text="@string/back_to_events"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"

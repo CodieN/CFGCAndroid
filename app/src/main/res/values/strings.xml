@@ -56,5 +56,6 @@
     <string name="username_contactemail">Username [ContactEmail]</string>
     <string name="password">Password</string>
     <string name="events">Events</string>
+    <string name="back_to_events">Back to Events</string>
 
 </resources>
