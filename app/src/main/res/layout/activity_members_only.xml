@@ -7,88 +7,114 @@
     android:background="@color/colorAccent"
     tools:context="com.example.lenovo.gardenclub.LoginProcess">
 
-    <Button
-        android:id="@+id/homeButton10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/cfgc_logo"
-        android:clickable="true"
-        android:focusable="true"
-        app:layout_constraintBottom_toTopOf="@+id/guideline34"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/welcomeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/welcome_to_the_membership_directory"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline34" />
-
-    <ImageView
-        android:id="@+id/jessamineFlowerImageView"
+    <ScrollView
+        android:id="@+id/loginScrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:scaleType="center"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
-        app:srcCompat="@drawable/carolinayellowjessaminemed1"
-        tools:ignore="ContentDescription" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/usernameEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="@string/username_contactemail"
-        android:inputType="textEmailAddress"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="Autofill" />
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/scrollViewConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="32dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/submitButton"
-        app:layout_constraintEnd_toEndOf="@+id/usernameEditText"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/usernameEditText"
-        tools:ignore="Autofill" />
+            <Button
+                android:id="@+id/homeButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/cfgc_logo"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toTopOf="@+id/welcomeTextView"
+                app:layout_constraintEnd_toEndOf="@id/scrollViewConstraintLayout"
+                app:layout_constraintStart_toStartOf="@id/scrollViewConstraintLayout"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline34"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
+            <TextView
+                android:id="@+id/welcomeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/welcome_to_the_membership_directory"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@id/jessamineFlowerImageView"
+                app:layout_constraintEnd_toEndOf="@id/scrollViewConstraintLayout"
+                app:layout_constraintStart_toStartOf="@id/scrollViewConstraintLayout" />
+
+            <ImageView
+                android:id="@+id/jessamineFlowerImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@id/usernameEditText"
+                app:layout_constraintEnd_toEndOf="@id/scrollViewConstraintLayout"
+                app:layout_constraintStart_toStartOf="@id/scrollViewConstraintLayout"
+                app:srcCompat="@drawable/carolinayellowjessaminemed1"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/username_contactemail"
+                android:inputType="textEmailAddress"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
+                app:layout_constraintEnd_toEndOf="@id/scrollViewConstraintLayout"
+                app:layout_constraintStart_toStartOf="@id/scrollViewConstraintLayout"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/submitButton"
+                app:layout_constraintEnd_toEndOf="@+id/usernameEditText"
+                app:layout_constraintStart_toStartOf="@+id/usernameEditText"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_layout_item_settings"
+                android:text="@string/Login"
+                app:layout_constraintBottom_toBottomOf="@id/scrollViewConstraintLayout"
+                app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/passwordEditText" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 
     <WebView
         android:id="@+id/webview"
@@ -99,19 +125,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/submitButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/rounded_layout_item_settings"
-        android:text="@string/Login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
-        app:layout_constraintStart_toStartOf="@+id/passwordEditText" />
 </android.support.constraint.ConstraintLayout>
