@@ -64,6 +64,44 @@ public class ContactList extends AppCompatActivity {
                 i++;
 
             }
+            for(int n = 1; n < contacts.size(); n++) {
+                String name0 = contacts.get(n - 1).getName();
+                String name1 = contacts.get(n).getName();
+                String first0 = name0.substring(0, name0.indexOf(" "));
+                String last0 = name0.substring(name0.indexOf(" ") + 1);
+                String first1 = name1.substring(0, name1.indexOf(" "));
+                String last1 = name1.substring(name1.indexOf(" ") + 1);
+                if(last0.equals(last1)) {
+                    int m = 0;
+                    if(first0.length() > first1.length() || first0.length() == first1.length()) {
+                        while(m < first1.length()) {
+                            char letter0 = first0.charAt(m);
+                            char letter1 = first1.charAt(m);
+                            if(letter0 > letter1) {
+                                contacts.add(n - 1, contacts.get(n));
+                                contacts.remove(n + 1);
+                                m = first1.length();
+                            } else if(letter1 > letter0)
+                                m = first1.length();
+                            else
+                                m++;
+                        }
+                    } else {
+                        while(m < first0.length()) {
+                            char letter0 = first0.charAt(m);
+                            char letter1 = first1.charAt(m);
+                            if(letter0 > letter1) {
+                                contacts.add(n - 1, contacts.get(n));
+                                contacts.remove(n + 1);
+                                m = first0.length();
+                            } else if(letter1 > letter0)
+                                m = first0.length();
+                            else
+                                m++;
+                        }
+                    }
+                }
+            }
             lst.setLayoutManager(new LinearLayoutManager(this));
             nContactAdapter = new ContactAdapter(this, (ArrayList<Contacts>) contacts);
             lst.setAdapter(nContactAdapter);
