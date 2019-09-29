@@ -11,7 +11,8 @@
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginStart="8dp"
-        app:srcCompat="@drawable/carolinayellowjessaminemed1"/>
+        app:srcCompat="@drawable/carolinayellowjessaminemed1"
+        android:layout_marginLeft="8dp" />
 
 
     <LinearLayout
@@ -26,14 +27,16 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:text="asd"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <TextView
             android:id="@+id/tv_mbrstatus"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="8dp"
-            android:text="asd"/>
+            android:text="asd"
+            android:layout_marginLeft="8dp" />
 
     </LinearLayout>
 </LinearLayout>

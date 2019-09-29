@@ -57,5 +57,12 @@
     <string name="password">Password</string>
     <string name="events">Events</string>
     <string name="back_to_events">Back to Events</string>
+    <string name="sort_by_first_name_or_last_name">Sort by First Name or Last Name</string>
+    <string name="the_cape_fear_garden_club_inc">The Cape Fear Garden Club, Inc.</string>
+    <string name="last">Last</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="sort_first">Sort First</string>
+    <string name="sort_last">Sort Last</string>
 
 </resources>
