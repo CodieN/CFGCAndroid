@@ -1,6 +1,9 @@
 package com.example.lenovo.gardenclub;
 
 import android.Manifest;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -94,11 +97,11 @@ public class Contact extends AppCompatActivity {
             startActivity(backIntent);
     }
 
-
     class BackgroundTask1 extends AsyncTask<String, Void, String> {
         String json_url;
         private static final String TAG = "BackgroundTask";
-
+        private int count0;
+        private int count1;
 
         @Override
         protected String doInBackground(String... params) {
@@ -544,19 +547,27 @@ public class Contact extends AppCompatActivity {
 
                                         }
                                     });
-
+                                    count0 = 0;
                                     btnCall.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View view) {
-                                            Intent callIntent = new Intent(Intent.ACTION_CALL);
-                                            callIntent.setData(Uri.parse("tel: " + finalPrimaryContactNumber));
-                                            if (ActivityCompat.checkSelfPermission(Contact.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                                                Intent otherCallIntent = new Intent(Intent.ACTION_DIAL);
-                                                otherCallIntent.setData(Uri.parse("tel: " + finalPrimaryContactNumber));
-                                                startActivity(otherCallIntent);
-                                                return;
+                                            count0++;
+                                            FragmentManager fm = getFragmentManager();
+                                            if(count0 % 2 == 1) {
+                                                FragmentTransaction ft = fm.beginTransaction();
+                                                Bundle b = new Bundle();
+                                                b.putString("prim", finalPrimaryContactNumber);
+                                                b.putString("sec", finalSecondaryContactNumber);
+                                                CallFragment callFrag = new CallFragment();
+                                                callFrag.setArguments(b);
+                                                ft.replace(R.id.fragFrame, callFrag);
+                                                ft.commit();
+                                            } else {
+                                                Fragment f = fm.findFragmentById(R.id.fragFrame);
+                                                FragmentTransaction ft = fm.beginTransaction();
+                                                ft.remove(f);
+                                                ft.commit();
                                             }
-                                            startActivity(callIntent);
                                         }
                                     });
 
@@ -574,12 +585,27 @@ public class Contact extends AppCompatActivity {
                                         }
                                     });
 
+                                    count1 = 0;
                                     btnText.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View view) {
-                                            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-                                            sendIntent.setData(Uri.parse("sms: " + finalPrimaryContactNumber));
-                                            startActivity(sendIntent);
+                                            count1++;
+                                            FragmentManager fm = getFragmentManager();
+                                            if(count1 % 2 == 1) {
+                                                FragmentTransaction ft = fm.beginTransaction();
+                                                Bundle b = new Bundle();
+                                                b.putString("prim", finalPrimaryContactNumber);
+                                                b.putString("sec", finalSecondaryContactNumber);
+                                                TextFragment textFrag = new TextFragment();
+                                                textFrag.setArguments(b);
+                                                ft.replace(R.id.fragFrame, textFrag);
+                                                ft.commit();
+                                            } else {
+                                                Fragment f = fm.findFragmentById(R.id.fragFrame);
+                                                FragmentTransaction ft = fm.beginTransaction();
+                                                ft.remove(f);
+                                                ft.commit();
+                                            }
                                         }
                                     });
                                 }
@@ -716,7 +742,4 @@ public class Contact extends AppCompatActivity {
             }
         }
     }
-
 }
-
-

@@ -209,4 +209,15 @@
         app:layout_constraintTop_toBottomOf="@+id/include"
         />
 
+    <FrameLayout
+        android:id="@+id/fragFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_call"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </FrameLayout>
+
 </android.support.constraint.ConstraintLayout>
