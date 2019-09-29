@@ -42,7 +42,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
         private TextView tvMbrStatus;
         private ImageView mImageView;
         private View parentView;
-
+        private ImageView bigImageView;
 
         ViewHolder(@NonNull View view) {
             super(view);
@@ -50,6 +50,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
             this.tvName = view.findViewById(R.id.nameTV);
             this.tvMbrStatus = view.findViewById(R.id.tv_mbrstatus);
             this.mImageView = view.findViewById(R.id.imageView4);
+            this.bigImageView = view.findViewById(R.id.bigImageView);
         }
     }
 
@@ -80,6 +81,10 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
                     .load("http://capefeargardenclub.org/cfgcTestingJSON/images_Testing/images/" + pID + ".jpg")
                     .apply(RequestOptions.overrideOf(100, 100))
                     .into(holder.mImageView);
+            Glide.with(context)
+                    .load("http://capefeargardenclub.org/cfgcTestingJSON/images_Testing/images/" + pID + ".jpg")
+                    .apply(RequestOptions.circleCropTransform())
+                    .into(holder.bigImageView);
 
         } else {
             Log.d(TAG, "onBindViewHolder: photoID is 'null'");
@@ -87,7 +92,25 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
                     .load(R.drawable.carolinayellowjessaminemed1)
                     .apply(RequestOptions.overrideOf(100, 100))
                     .into(holder.mImageView);
+            Glide.with(context)
+                    .load(R.drawable.carolinayellowjessaminemed1)
+                    .apply(RequestOptions.circleCropTransform())
+                    .into(holder.bigImageView);
         }
+
+        holder.mImageView.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.bigImageView.setVisibility(View.VISIBLE);
+            }
+        });
+
+        holder.bigImageView.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.bigImageView.setVisibility(View.GONE);
+            }
+        });
     }
 
     @Override
