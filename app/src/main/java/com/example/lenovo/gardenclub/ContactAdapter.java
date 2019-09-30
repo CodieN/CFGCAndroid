@@ -151,7 +151,9 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
-            contactsFiltered = (ArrayList<Contacts>) results.values;
+            if(results.values instanceof ArrayList) {
+                contactsFiltered = (ArrayList<Contacts>) results.values;
+            }
             notifyDataSetChanged();
         }
     }
