@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,7 +31,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
-                android:text="asd"
+                android:text="@string/asd"
                 android:textSize="20sp"
                 android:layout_marginLeft="8dp" />
 
@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
-                android:text="asd"
+                android:text="@string/asd"
                 android:layout_marginLeft="8dp" />
 
         </LinearLayout>
@@ -58,4 +58,4 @@
         app:srcCompat="@drawable/carolinayellowjessaminemed1"
         tools:ignore="ContentDescription" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

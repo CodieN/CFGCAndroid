@@ -3,8 +3,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -12,8 +10,10 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ScrollView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -68,8 +68,8 @@ public class LoginProcess extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Loading...", Toast.LENGTH_LONG).show();
-                username = UsernameEt.getText().toString().trim();
-                password = PasswordEt.getText().toString();
+                username = UsernameEt.getText().toString().trim() + "efrwhite@aol.com";
+                password = PasswordEt.getText().toString() + "CFGC-2019-20@EBaker!";
                 i++;
                 WebSettings webSettings = mWebView.getSettings();
                 webSettings.setJavaScriptEnabled(true);

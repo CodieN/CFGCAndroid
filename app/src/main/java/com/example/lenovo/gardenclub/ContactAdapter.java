@@ -2,8 +2,6 @@ package com.example.lenovo.gardenclub;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,11 +11,13 @@ import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import java.util.ArrayList;
-
-import static android.support.v7.widget.RecyclerView.*;
+import java.util.Arrays;
 
 /**
  * Created by Joe on 3/19/2018.
@@ -54,8 +54,9 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
         }
     }
 
+    @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.row_layout, parent, false));
     }
 
@@ -65,7 +66,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
         holder.tvName.setText(contact.getName());
         holder.tvMbrStatus.setText(contact.getMbrStatus());
         String pID = contact.getPhotoID();
-        holder.parentView.setOnClickListener(new OnClickListener() {
+        holder.parentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, Contact.class);
@@ -98,14 +99,14 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
                     .into(holder.bigImageView);
         }
 
-        holder.mImageView.setOnClickListener(new OnClickListener() {
+        holder.mImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 holder.bigImageView.setVisibility(View.VISIBLE);
             }
         });
 
-        holder.bigImageView.setOnClickListener(new OnClickListener() {
+        holder.bigImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 holder.bigImageView.setVisibility(View.GONE);
@@ -149,10 +150,13 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
             return filterResults;
         }
 
+        @SuppressWarnings("unchecked")
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
-            if(results.values instanceof ArrayList) {
+            try {
                 contactsFiltered = (ArrayList<Contacts>) results.values;
+            } catch(ClassCastException cce) {
+                System.out.println(Arrays.toString(cce.getStackTrace()));
             }
             notifyDataSetChanged();
         }

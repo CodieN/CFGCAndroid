@@ -64,5 +64,19 @@
     <string name="first_name">First Name</string>
     <string name="sort_first">Sort First</string>
     <string name="sort_last">Sort Last</string>
-
+    <string name="_2020_azalea_gardens_map">2020 Azalea Gardens Map</string>
+    <string name="this_box_will_contain_info_about_the_azalea_belles">This box will contain info about the Azalea Belles.</string>
+    <string name="no_name">No name is set, tap here to set one.</string>
+    <string name="no_spouse_name">No spouse name is set, tap here to set one.</string>
+    <string name="no_address">No address is set, tap here to set one.</string>
+    <string name="no_primary">No primary contact is set, tap here to set one.</string>
+    <string name="no_secondary">No secondary contact is set, tap here to set one.</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="street_address">Street Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="asd">asd</string>
+    <string name="edit_name">Edit Name</string>
+    <string name="this_box_is_going_to_contain_text_from_azalea_belles_website_photos_policies_and_belle_application_info">This box is going to contain text from Azalea Belles website photos, policies, and Belle application info</string>
 </resources>

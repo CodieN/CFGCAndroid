@@ -1,7 +1,8 @@
 package com.example.lenovo.gardenclub;
 
 import android.os.AsyncTask;
-import android.support.v7.app.AlertDialog;
+
+import androidx.appcompat.app.AlertDialog;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

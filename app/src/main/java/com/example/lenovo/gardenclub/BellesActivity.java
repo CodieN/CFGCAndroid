@@ -4,42 +4,41 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TourActivity extends AppCompatActivity {
+public class BellesActivity extends AppCompatActivity {
     private Intent i;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_azalea_garden_tour);
-        Button btnHome = findViewById(R.id.homeButton1);
-        Button btnMap = findViewById(R.id.mapButton0);
-        Button btnBelles = findViewById(R.id.bellesButton0);
+        setContentView(R.layout.activity_belles);
+        Button btnHome = findViewById(R.id.homeButton12);
+        Button btnMap = findViewById(R.id.mapButton1);
+        Button btnTour = findViewById(R.id.tourButton1);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                i = new Intent(TourActivity.this, MainActivity.class);
+            public void onClick(View view) {
+                i = new Intent(BellesActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });
 
         btnMap.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                i = new Intent(TourActivity.this, MapActivity.class);
+            public void onClick(View view) {
+                i = new Intent(BellesActivity.this, MapActivity.class);
                 startActivity(i);
             }
         });
 
-        btnBelles.setOnClickListener(new View.OnClickListener() {
+        btnTour.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                i = new Intent(TourActivity.this, BellesActivity.class);
+            public void onClick(View view) {
+                i = new Intent(BellesActivity.this, TourActivity.class);
                 startActivity(i);
             }
         });

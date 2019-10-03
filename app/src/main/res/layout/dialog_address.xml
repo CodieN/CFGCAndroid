@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
@@ -12,7 +13,7 @@
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginTop="8dp"
-        android:text="Edit Address"
+        android:text="@string/edit_address"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@android:color/background_dark"
@@ -27,9 +28,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="4dp"
         android:layout_marginTop="4dp"
-        android:text="Street Address"
+        android:text="@string/street_address"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp" />
     <EditText
         android:id="@+id/etStreet"
         android:inputType="textEmailAddress"
@@ -40,7 +43,11 @@
         android:nextFocusRight="@+id/etCity"
         android:nextFocusDown="@+id/etCity"
         android:nextFocusForward="@+id/etCity"
-        android:layout_marginBottom="4dp"/>
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/cityTitle"
@@ -50,9 +57,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="4dp"
         android:layout_marginTop="4dp"
-        android:text="City"
+        android:text="@string/city"
         android:textColor="?android:attr/colorForeground"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp" />
     <EditText
         android:id="@+id/etCity"
         android:inputType="textEmailAddress"
@@ -67,7 +76,11 @@
         android:nextFocusRight="@+id/etState"
         android:nextFocusDown="@+id/etState"
         android:nextFocusForward="@+id/etState"
-        />
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        tools:targetApi="jelly_bean"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/stateTitle"
@@ -77,9 +90,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="4dp"
         android:layout_marginTop="4dp"
-        android:text="State"
+        android:text="@string/state"
         android:textColor="?android:attr/colorForeground"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp" />
     <EditText
         android:id="@+id/etState"
         android:inputType="textEmailAddress"
@@ -93,7 +108,12 @@
         android:nextFocusRight="@+id/etZip"
         android:nextFocusDown="@+id/etZip"
         android:nextFocusForward="@+id/etZip"
-        android:fontFamily="sans-serif"/>
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        tools:targetApi="jelly_bean"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/zipTitle"
@@ -103,9 +123,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="4dp"
         android:layout_marginTop="4dp"
-        android:text="Zip Code"
+        android:text="@string/zip_code"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp" />
     <EditText
         android:id="@+id/etZip"
         android:layout_width="match_parent"
@@ -116,6 +138,11 @@
         android:layout_marginBottom="2dp"
         android:nextFocusUp="@+id/etState"
         android:nextFocusLeft="@+id/etState"
-        android:fontFamily="sans-serif"/>
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        tools:targetApi="jelly_bean"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
 
 </LinearLayout>
