@@ -29,27 +29,309 @@
     <string name="succ_save">Information successfully saved</string>
     <string name="cfgc_member_since">CFGC Member Since</string>
     <string name="azalea">2020 Azalea Garden Tour</string>
-    <string name="this_box_is_going_to_contain_text_from_azalea_tour_website_with_current_year_theme">This box is going to contain text from Azalea Tour website with current year theme</string>
+    <string name="this_box_is_going_to_contain_text_from_azalea_tour_website_with_current_year_theme">
+        \t\t\tCome enjoy Southern hospitality amid the vibrant color of azaleas and spring flowers
+        during the 67th Annual Cape Fear Garden Club Azalea Garden Tour© in the beautiful
+        coastal community of Wilmington, North Carolina. An official event of the North Carolina
+        Azalea Festival, the tour is one of the longest running and most popular garden tours in
+        the South. \n\t\t\tProceeds from the Cape Fear Garden Club Azalea Garden Tour© are
+        reinvested in the community through beautification and horticultural grants within New
+        Hanover County, scholarships at the University of North Carolina Wilmington and Cape
+        Fear Community College, and conservation efforts at Battery Island, a National Audubon
+        Society bird sanctuary. The club has granted over $1 million in donations to the community
+        in the past 61 years.
+    </string>
     <string name="_2020_gardens_and_map">2020 Gardens and Map</string>
     <string name="azalea_belles">Azalea Belles©</string>
-    <string name="this_box_is_going_to_contain_text_from_bird_islands_cruise_page_and_get_date_for_cruise">This box is going to contain text from Bird Islands cruise page and get date for cruise</string>
     <string name="battery_island_committee">Battery Island Committee</string>
     <string name="civic_impact">Civic Impact</string>
     <string name="membership">Membership</string>
-    <string name="this_box_is_going_to_contain_text_from_battery_island_committee_info">This box is going to contain text from Battery Island Committee Info</string>
+    <string name="this_box_is_going_to_contain_text_from_battery_island_committee_info">
+        \t\t\tBattery Island (established Fall 1996) – Battery Island Committee highlights the
+        twenty-three-year relationship that The Cape Fear Garden Club, Inc. has in
+        working closely with Audubon NC’s Coastal Office and biologists to maintain safe
+        habitats for the migratory birds, specifically the islands in the Lower Cape Fear
+        River where they nest. The Cape Fear Garden Club, Inc. assists Audubon in
+        funding through a standing annual grant and through education outreach by
+        sponsoring the annual Spring Cruise to the Bird Islands in the Lower Cape Fear
+        River each May. \n\t\t\tThis committee supports Audubon with cleanups on Battery
+        Island in the spring before nesting season begins and the fall after the nesting
+        season is complete. Our main concern is to get debris that floats in off the Cape
+        Fear River and specifically fishing line off the island because of the danger of
+        entanglement of pelicans and other shorebirds. The Committee also does the
+        detailed planning and coordination for The Cape Fear Garden Club for the
+        Spring Cruise to the Bird Islands in the Lower Cape Fear River.
+        \n\nthis needs to be fixed when I find it.</string>
     <string name="back_to_bird_islands_cruise">Back to Bird Islands Cruise</string>
+    <string name="this_box_is_going_to_contain_text_from_battery_island_cruise_and_ticket_info">
+        Mark Your Calendar for the 2019 Cruise
+        \n\t\t\tTickets are $40 and will be available beginning March 1 at Wild Bird and Garden
+        located in Wilmington at Hanover Center and also in Southport.
+
+        \n\nThe cruise is an educational experience and viewing is narrated by three experts
+        who will share their knowledge with us:
+        \n\t\t\t· Dr. James Parnell, Professor Emeritus of UNCW and North Carolina’s top ornithologist.
+        \n\t\t\t· Walker Golder, National Audubon Society’s Director of the Eastern Flyway
+        Coast Initiative which includes the North Carolina program as well as programs in
+        eight states along the Atlantic Coast.
+        \n\t\t\t· Lindsay Addison, Audubon North Carolina’s Coastal Biologist speaks
+        describing her work to monitor the nesting colonies on the six bird islands the Cape
+        Fear River including Battery Island.
+
+        \n\n\t\t\tThe cruise will include islands in the lower Cape Fear River where the birds
+        have chosen their nesting sites. They are all North Carolina Audubon Bird Sanctuaries.
+        \n\t\t\tBring your camera and binoculars to view nesting areas of many coastal water
+        birds including pelicans, white ibis, great egrets and herons. Pack a picnic lunch
+        if you would like. Soft drinks, water and snacks will be sold aboard ship.
+
+        \n\nAdditional information is available by emailing birdislandscruise@capefeargardenclub.org
+        \nWhen and Where:
+
+        \n\nSunday, May 19, 2019
+        \nBoarding: 12:30 pm
+        \nDeparting: 1:00 pm
+        \nReturn: Approx 5:30 pm
+
+        \n\nDeparting from Carolina Beach Marina on the Royal Winner Princess II
+
+        \n\nAddress: 100 Carl Winner Ave, Carolina Beach, NC
+    </string>
     <string name="this_box_is_going_to_contain_information_from_the_club_theme_page_on_website">This box is going to contain information from the Club theme page on website.</string>
     <string name="community_projects">Community Projects</string>
     <string name="lasting_legacy">Lasting Legacy</string>
     <string name="grants">Grants</string>
-    <string name="this_box_is_going_to_contain_information_from_the_community_projects_page_on_website">This box is going to contain information from the Community Projects page on website.</string>
+    <string name="this_box_is_going_to_contain_information_from_the_community_projects_page_on_website">
+        \t\t\tFor over 50 years, the Azalea Garden Tour, sponsored by Cape Fear Garden Club, has proudly
+        returned thousands of dollars to New Hanover County. Tour profits Money available to beautify,
+        conserve, educate, inspire, and contribute to people of all ages using horticulture and garden
+        development.
+    </string>
     <string name="back_to_civic_impact">Back to Civic Impact</string>
-    <string name="this_box_is_going_to_contain_information_from_the_grant_app_page_benefits_of_grants_and_recent_grants_awarded">This box is going to contain information from the Grant app page, Benefits of Grants, and Recent Grants Awarded.</string>
-    <string name="this_box_is_going_to_contain_information_from_the_endowment_history_page_on_website">This box is going to contain information from the Endowment History page on website.</string>
-    <string name="this_box_is_going_to_contain_text_from_history_page_and_purpose_pages_from_website">This box is going to contain text from History page and Purpose pages from website.</string>
+    <string name="this_box_is_going_to_contain_information_from_the_grant_app_page_benefits_of_grants_and_recent_grants_awarded">
+        \t\t\tGrant Recipients on 2018 were awarded $72,326 on November 14, 2018. The Cape Fear Garden
+        Club is pleased to have David Johnson, owner of Johnson Nursery-Gardens Direct, as a sponsor for
+        the 2018 Grant Recipients. Each of the twenty-six recipients received a $300 credit to be used at his
+        nursery located in Willard or by ordering on line.
+
+        \n\nAirlie Gardens Butterfly House
+        \nAlliance for Cape Fear Trees
+        \nBellamy Mansion Museum
+        \nBrigade Boys and Girls Club
+        \nCameron Art Museum
+        \nCape Fear Clinic, Inc
+        \nCape Fear Habitat for Humanity
+        \nChildren’s Museum of Wilmington
+        \nCoastal Preparatory Academy
+        \nCodington Elementary School
+        \nCommunity Enrichment Initiative, Inc
+        \nDREAMS of Wilmington, Inc
+        \nFirst Christian Church
+        \nFriends of New Hanover County Arboretum
+        \nFriends of Oakdale Cemetery
+        \nThe Greater Wilmington Youth Initiative, Inc
+        \nLake Forest Academy
+        \nLower Cape Fear Historical Society
+        \nLower Cape Fear Hospice
+        \nNew Hanover County Arboretum Ability
+        \nNew Hanover Parks and Gardens – Veterans Park
+        \nNew Hanover High School
+        \nNorth Carolina Coastal Federation
+        \nSt. Andrews-Covenant Presbyterian Church
+        \nWrightsville Beach Museum of History
+        \nYMCA of Southeastern North Carolina
+        \nStanding Grants
+        \nNorth Carolina Audubon Society Grant
+        \nCape Fear Community College Scholarship
+        \nUniversity of North Carolina Wilmington Scholarship
+    </string>
+    <string name="this_box_is_going_to_contain_information_from_the_endowment_history_page_on_website">
+        \t\t\tFor almost 90 years the Cape Fear Garden Club has worked to enhance and support
+        the natural beauty of Wilmington. In 2011, we created the Cape Fear Garden Club
+        Beautification Endowment to create perpetual funding to promote wide scale enhancement
+        and maintenance of the landscapes of our city gateways, medians, byways and public
+        spaces. Below is an overview of how recent grants benefit our Wilmington community:
+
+        \n\nBEAUTIFICATION:
+
+        \n\nThe creation of new gardens and the restoration of existing gardens;
+        adding trees, shrubs; flowers along with hardscapes that will allow people to enjoy the particular area.
+
+        \n\n\t\t\tChildren’s Museum – Secret Garden off Orange Street in which area residents,
+        visitors and tourists can rest and relax
+        \n\t\t\tCarolina Beach – enhancement of the “Town Gazebo”, central to this community
+        \n\t\t\tSchools: Wilmington Christian, NHHS, Hoggard, Forest Hills Elementary, CFCC,
+        Roland Grise Middle, Isaac Bear, Friends School, Gregory Elementary, Lake Forest Academy,
+        St Mary’s, Wrightsville Beach Elementary, Noble Middle and Holly Tree Elementary
+        \n\t\t\tJuvenile Day Treatment Center – gateway to Wilmington along side of this building
+        \n\t\t\tKure Beach – enhancement of areas surrounding city signs
+        \n\t\t\tLower Cape Fear Historical Society – Latimer House
+        \n\t\t\tCity of Wilmington – Greenfield Amphitheater
+        \n\t\t\tAirlie Gardens – Improve center drive of the gardens with irrigation, plant materials and mulch (2013)
+        \n\t\t\tCameron Art Museum – Creation of a quilt garden from the museum’s collection.
+        It is a slave-made tulip quilt. Funding is for all plantings in this garden (2013)
+        \n\t\t\tBellamy Mansion Museum – re-activate 1861 cistern and rainwater harvesting system
+        \n\t\t\tRotary Clubs of Wilmington (for Greenfield Park) – completion of irrigation project and Rotary
+        Wheel for Wilmington Parks and Recreation
+        \n\t\t\tFriends of the Battleship North Carolina – Improve Battleship Park with plants, mulch and soil (2013)
+        \n\t\t\tWilmington Tree Commission – 200 azaleas and 9 Live Oaks on Market Street between 4th and 16th Streets
+        \n\t\t\tCape Fear Community College – Beautify the circular courtyard at the Hanover parking deck (2013)
+
+
+
+        \n\n\n\nCONSERVATION:
+
+        \n\nSupports the CFGC’s ongoing project at Battery Island which was just increased from $4000 to $6000
+        awarded each year.  This is a partnership with the Audubon Society with Walker Goldman and includes
+        a bi-annual cleanup with plantings of Yaupon shrubs which help provide nesting sites for coastal birds,
+        in particular the White Ibis which has one of its largest nesting sites right here at Battery Island.
+        Other recent conservation grant projects have included:
+
+        \n\n\t\t\tThe Arboretum new entrance which will feature storm water best management practice demonstration site (2008)
+        \n\t\t\tCape Fear Community College Foundation – horticultural fitness trail which includes preservation of native carnivorous plants (2007)
+        \n\t\t\tCape Fear River Watch – created an Urban Rain Garden to manage storm water runoff from headquarters building on Surry St;
+        utilized native plants and conservation landscaping techniques to create an education site in front of the building (2007)
+        \n\t\t\tLower Cape Fear Historical Society – Restore storm drains at sides of the 1852 Latimer House and improve irrigation (2013)
+        \n\t\t\tNorth Carolina Coastal Federation – Native plants ans shrubs for rain gardens at Bradley Creek and Alderman Elementary Schools (2013)
+        \n\t\t\tNorth Carolina Land Trust – Supplies for propagation of new plants to restore Venus Flytraps at the Stanley Rehder Carivorous Garden(2013)
+
+
+
+        \n\n\n\nEDUCATIONAL:
+
+        \n\nMultiple grant awards have gone to schools and organizations for the purpose of educating
+        people about how to use plants for conservation, food, landscaping, attracting wildlife, etc.
+
+        \n\n\t\t\tAirlie Butterfly Garden – CFGC supplied the funds to landscape the entire area surrounding the new Butterfly Garden at Airlie Gardens .
+        \n\t\t\tCape Fear Community College – funds for a greenhouse in which students learn to grow plants (now named the
+        “Cape Fear Garden Club Greenhouse” in our club’s honor for our support).  CFCC is also a partner in landscaping Habitat
+        for Humanity homes as a part of their landscaping curriculum
+        \n\t\t\tArboretum – Plant additional 45 camellia plants and companion plants in the former specimen and patio garden
+        \n\t\t\tThe Davis Community – Create an outdoor destination to draw people from their rooms to experience nature (2013)
+        \n\t\t\tCreekwood Community – an ongoing project to raise vegetables, engage community participation, educate and improve the health of area residents
+
+        \n\nSCHOOLS:
+
+        \n\n\t\t\tWilmington Academy of Arts and Sciences – vegetable gardens and a Snow Pea “Tee-Pee” to teach students
+        a scientific introduction to vegetable gardening including the process of preparing beds, planting, composting,
+        harvesting, and eating the crop produced
+        \n\t\t\tCommunities in Schools – this center for at-risk youth will design, implement and maintain a flower and vegetable
+        garden and hopefully sell the products at the Farmer’s Market downtown
+        \n\t\t\tYahweh Center – working garden of flowers, herbs and vegetables including a greenhouse for hands on learning for children
+        \n\t\t\tJT Hoggard – shade garden and education for Horticultural students in implementation and maintenance
+        \n\t\t\tBellamy Elementary Garden Club – flower beds to be used in education and to improve self esteem
+        \n\t\t\tNHHS – English as a second Language Students will install and maintain senior courtyard plantings
+        \n\t\t\tLaney Highschool – Senior class garden, provide mulch and plantings (2013)
+
+        \n\nINSPIRATION AND MEMORIALS:
+
+        \n\n\t\t\tLower Cape Fear Hospice received monies to help with a 3 phase project for gardens on the property that will be
+        uplifting to patients as well as to the entire community who visit and contemplate life and death. In 2013 Hospice was awarded
+        a grant to cover all the plantings for new courtyards created as part of the campaign to expand the Pavilion
+        \n\t\t\tUNCW students applied for and received a grant to beautify an area on campus and create a memorial garden
+        for students and faculty who have died
+        \n\t\t\tAshley High School TrrM Society – memorial garden
+        \n\t\t\tLittle Chapel on the Boardwalk – Biblical Garden established on their property off “The Loop” – also educational
+        as to plant materials found in the Old Testament
+        \n\t\t\tWilmington Firefighters’ Memorial – Purchase materials for the irrigation system, a load of topsoil and perennials
+        for the garden (2013)
+
+        \n\nPHILANTHROPIC:
+
+        \n\t\t\tHabitat for Humanity – for 4 years, we have funded plant materials to landscape homes for this organization;
+        CFCC students provide the labor.  Habitat residents undergo a 12 week program to teach them how to own their
+        own home and maintain it.
+
+        \n\nENDOWED SCHOLARSHIPS:
+
+        \n\n\t\t\tCape Fear Community College
+        \n\t\t\tUniversity of North Carolina, Wilmington
+    </string>
     <string name="contact_us">Contact Us</string>
+    <string name="this_box_is_going_to_contain_text_from_history_page_and_purpose_pages_from_website">
+        CAPE FEAR GARDEN CLUB, INC
+        \nWILMINGTON, NORTH CAROLINA
+
+        \n\nORGANIZED FEBRUARY 11, 1925
+        \nFederated with The Garden Club of North Carolina, Inc., 1929
+        \nFederated with The National Garden Clubs, Inc., 1930
+        \nMember of the South Atlantic Region, 1933
+        \nMember of District 11
+        \nAffiliated Member North Carolina Wildlife Federation, 1999
+
+        \n\nMOTTO
+        \n“And the Lord God planted a Garden…and there He put Man”….Genesis 2:8
+        \nAdopted September 9, 1953
+
+        \n\nCOLORS
+        \nGreen and Yellow
+
+        \n\nFLOWER
+        \nCarolina Yellow Jessamine (Gelsemium sempervirens)
+
+        \n\nCAPE FEAR GARDEN CLUB SEAL
+        \nAdopted March 25, 1997, designed by Myrta W. Spence, CFGC
+
+        \n\nEstablished North Carolina State Butterfly (SB236) Eastern Tiger Swallowtail
+        \nJune 18, 2012
+
+        \n\nTHE OBJECTIVES SHALL BE….
+
+        \n\t\t\tTo provide a non-profit, philanthropic, and educational association for the members.
+        \n\t\t\tTo stimulate knowledge and the love of gardening.
+        \n\t\t\tTo study, in all its aspects, the art of gardening, particularly horticulture, and to cooperate
+        with other agencies furthering such interest.
+        \n\t\t\tTo encourage environmental improvement through civic development, beautification,
+        restoration, and to aid in the protection and conservation of our native trees, plants, and birds.
+        \n\t\t\tCape Fear Garden Club, Inc. is a registered, non-profit corporation which is exempt from
+        US Federal income tax under Section 501© 3 of the Internal Revenue Code.
+
+        \n\nCharter Members 1925
+
+        \n\nMrs. N.M. Martin, President
+        \nMrs. W.A. Graham, Recording Secretary
+        \nMrs. John Bolles
+        \nMrs. A.M. Hall
+        \nMrs. Hugh MacRae
+        \nMrs. Platt W. Davis
+        \nMrs. R.H. Hubbard
+        \nMiss Jeanie Strange
+        \nMrs. W.E. Elliott
+        \nMrs. William Latimer
+        \nMrs. Martin Willard
+        \nMiss Sarah Lippitt
+    </string>
     <string name="members_only">Members Only</string>
-    <string name="this_box_is_going_to_contain_the_contact_us_info_from_the_website">This box is going to contain the Contact Us info from the website</string>
+    <string name="this_box_is_going_to_contain_the_contact_us_info_from_the_website">
+        Our USPS Mailing Address:
+        \nCape Fear Garden Club, Inc.
+        \nP.O. Box 4751 Wilmington, NC 28406
+        \nFor General Inquires:
+        \ninfo[@]CapeFearGardenClub.org
+
+        \n\nPresident of the Cape Fear Garden Club, Inc.:
+        \nRebecca Philpott
+        \nPresident[@]CapeFearGardenClub.org
+
+        \n\nFor information about the Bird Islands Cruise:
+        \nMarlene Eader
+        \nbirdislandscruise[@]capefeargardenclub.org
+
+        \n\nMedia Questions and Interview Requests:
+        \nBarbara Downing
+        \npublicity[@]capefeargardenclub.org
+
+        \n\nAzalea Garden Tour Media Questions and Interview Requests:
+        \nNina Brown or Barbara Downing
+        \ngardentourpublicity[@]capefeargardenclub.org
+
+        \n\nCape Fear Garden Club, Inc. Azalea Belles:
+        \nKaren Smith
+        \nAzaleaBellesChair[@]CapeFearGardenClub.org
+
+        \n\nWebmaster:
+        \nRahel Haley
+        \nWebmaster[@]CapeFearGardenClub.org
+</string>
     <string name="back_to_membership">Back to Membership</string>
     <string name="username_or_email">Username or Email</string>
     <string name="welcome_to_the_membership_directory">Welcome to the Membership Directory</string>
@@ -78,5 +360,90 @@
     <string name="zip_code">Zip Code</string>
     <string name="asd">asd</string>
     <string name="edit_name">Edit Name</string>
-    <string name="this_box_is_going_to_contain_text_from_azalea_belles_website_photos_policies_and_belle_application_info">This box is going to contain text from Azalea Belles website photos, policies, and Belle application info</string>
+    <string name="this_box_is_going_to_contain_text_from_azalea_belles_website_photos_policies_and_belle_application_info">
+        Azalea Belle Policies and Application Information
+        \n2019 Azalea Belle Application Information
+
+        \n\nApplications for the 2019 Cape Fear Garden Club, Inc. Azalea Belles © will be available to high school
+        juniors and seniors on January 23, 2019 from members of the Cape Fear Garden Club (CFGC) or the Azalea
+        Belle Committee. Young ladies desiring to become a Belle should contact a member of the CFGC to ask
+        if they will sponsor you and help you complete an application. Juniors must have a CFGC member sponsor.
+        For Seniors ONLY: If you do not know a CFGC member, you may go to 1309 Honor Lane at 4:00 PM on
+        January 23rd. to be interviewed by the Belle Committee and receive an application from them. Please refer
+        to the Azalea Belle policy as posted on this website. Belle Applications for 2019 closed at midnight on January 30th.
+        \nAZALEA BELLE POLICIES (adopted 2006; revised 2018)
+
+        \n\nCFGC Belle Mission Statement: The Cape Fear Garden Club, Inc. Azalea Belles © serve as ambassadors
+        for The Cape Fear Garden Club Inc., the North Carolina Azalea Festival and the City of Wilmington.
+        This is a diverse group of young women dressed in colorful gowns that complement the blooms and surrounding
+        landscapes of Wilmington, greet visitors to the Cape Fear Garden Club Azalea Garden Tour©, and participate
+        in other events related to the North Carolina Azalea Festival.
+
+        \n\n1. The Azalea Belle Committee is composed of members of The Cape Fear Garden Club, Inc.
+
+        \n\n2. The purpose of the Azalea Belle Committee is to assist the Belle Chairmen with the initial contacting of
+        the Belle, the dress fittings, the tea, the rehearsal, the ribbon cutting, and any other activities in which assistance is needed.
+
+        \n\n3. The Belle applications will be distributed each year at the January meeting of the Cape Fear Garden
+        Club to members of the Cape Fear Garden Club.
+
+        \n\n4. Cape Fear Garden Club members may sponsor no more than 3 young ladies who meet the criteria*
+        specified on the Belle information sheet attached to the application. Sponsors are responsible for informing
+        the Belle and her parents of her responsibilities to the Garden Club.
+
+        \n\n5. Senior girls who wish to be Belles and do not have a garden club sponsor may apply through the
+        Belle Chairmen. Her sponsor will be listed as “committee sponsored.” This policy allows more girls to
+        have this opportunity and it helps us to be more diverse. ALL JUNIOR APPLICANTS MUST have a
+        garden club sponsor for their application to be accepted – NO EXCEPTIONS (any junior who wishes
+        to apply but cannot find a garden club sponsor may reapply through the Belle Committee or through
+        a garden club sponsor her senior year).
+
+        \n\n6. The Belle Chairmen will determine the number of Belles needed for each garden tour based on
+        the sizes of the gardens. The number may vary from year to year. In other words, there is no set number.
+
+        \n\n7. Belle applications must be mailed to the address listed on the application and they must be
+        postmarked by the date listed on the application. Applications received after the set postmark date
+        will not be considered. NO EXCEPTIONS!
+
+        \n\n8. Belle selection will be conducted by the Belle committee chairs using the following guidelines:
+
+        \n\n\t\t\ta. Daughters and granddaughters of CFGC members will be given first priority regardless of where the
+        girl resides. High school seniors who attend school or reside in New Hanover County. High school juniors who
+        attend school or reside in New Hanover County. If there are more junior applications than slots available after
+        placing the above, a random lottery will be conducted from the junior applicants by the Belle Chairmen. (We
+        are no longer accepting any sophomore applications due to the numbers of juniors and seniors applying each year.)
+
+        \n\n\t\t\tb. Young ladies of appropriate age from surrounding counties may apply, but their applications
+        will not be given priority over any of the above.
+
+        \n\n9. The Belle Chairmen will mail acceptance letters to the young ladies who are selected.
+        Letters of regret will be mailed to those not selected. If a young lady is not selected, she will have to go
+        through the application process again the following year if she is eligible and wishes to be considered.
+        We do not keep a waiting list.
+
+        \n\n10. The Belle Chairmen will select the Belles who will participate in the special activities.
+        (Examples: trip to Raleigh, photo shoots for publicity, parade floats, the Queen’s arrival, etc.)
+        When possible, daughters and granddaughters will be considered for these activities. It is not
+        always possible or fair to always place only daughters and granddaughters in all the special activities.
+
+        \n\n11. The dressmakers for the Belles are secured by the chairmen annually. The chairmen
+        and the dressmakers will determine the dates for the fittings. Committee members will assist
+        with the fittings. If a Belle has her own gown or would like to have her own gown made by someone
+        other than the designated dressmakers, she will have to have the pattern and fabric approved by the Belle Chairmen.
+
+        \n\n12. These policies will remain in effect until the committee decides changes need to be made.
+
+        \n\n*Criteria:
+
+        \n\n\t\t\tApplications are accepted from young ladies who are in the 11th or 12th grade and who reside in or attend school
+        in New Hanover County. Applications from surrounding counties are accepted, but are not given priority over New Hanover
+        County applicants. (Daughters and granddaughters of CFGC members may reside out of town.)
+        \n\t\t\tA young lady may only serve as a Belle one year.
+        \n\t\t\tA young lady who wishes to be a Belle may not participate in the Azalea Festival Scholarship Pageant
+        in the same year she serves as a Belle.
+
+        \n\n*************************
+        \nQuestions regarding this policy should be directed to Karen Smith, Chairperson of the Azalea Belle
+        Committee: karen.smith1309@gmail.com or 910-620-6958.
+    </string>
 </resources>
