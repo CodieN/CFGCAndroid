@@ -49,4 +49,5 @@ dependencies {
     }
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
     implementation 'androidx.recyclerview:recyclerview'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
 }

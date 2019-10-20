@@ -59,6 +59,7 @@
         <activity android:name=".ContactUsActivity" />
         <activity android:name=".TourActivity" />
         <activity android:name=".MapActivity" />
+        <activity android:name=".DirectionsActivity" />
         <activity android:name=".BellesActivity" />
         <activity android:name=".MembershipActivity" />
         <activity android:name=".ProjectsActivity" />
