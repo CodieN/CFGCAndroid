@@ -68,8 +68,8 @@ public class LoginProcess extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Loading...", Toast.LENGTH_LONG).show();
-                username = UsernameEt.getText().toString().trim() + "efrwhite@aol.com";
-                password = PasswordEt.getText().toString() + "CFGC-2019-20@EBaker!";
+                username = UsernameEt.getText().toString().trim();
+                password = PasswordEt.getText().toString();
                 i++;
                 WebSettings webSettings = mWebView.getSettings();
                 webSettings.setJavaScriptEnabled(true);
