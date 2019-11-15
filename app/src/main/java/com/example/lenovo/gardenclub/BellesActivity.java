@@ -24,12 +24,11 @@ public class BellesActivity extends AppCompatActivity {
         TextView descTV = findViewById(R.id.bellesDescTV);
 
         Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
-        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
 
-        titleTV.setTypeface(fancy);
+        titleTV.setTypeface(arial);
         descTV.setTypeface(arial);
-        btnMap.setTypeface(fancy);
-        btnTour.setTypeface(fancy);
+        btnMap.setTypeface(arial);
+        btnTour.setTypeface(arial);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

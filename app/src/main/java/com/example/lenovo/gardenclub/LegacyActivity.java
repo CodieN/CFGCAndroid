@@ -25,13 +25,12 @@ public class LegacyActivity extends AppCompatActivity {
         TextView descTV = findViewById(R.id.endowmentHistoryTextView);
 
         Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
-        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
 
-        titleTV.setTypeface(fancy);
+        titleTV.setTypeface(arial);
         descTV.setTypeface(arial);
-        btnProjects.setTypeface(fancy);
-        btnGrants.setTypeface(fancy);
-        btnBack.setTypeface(fancy);
+        btnProjects.setTypeface(arial);
+        btnGrants.setTypeface(arial);
+        btnBack.setTypeface(arial);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

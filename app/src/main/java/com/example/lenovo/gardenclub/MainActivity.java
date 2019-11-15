@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
         Button btnImpact = findViewById(R.id.impactButtonOnHomePage);
         Button btnMember = findViewById(R.id.membershipButtonOnHomePage);
 
-        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
+        Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
 
-        btnTour.setTypeface(fancy);
-        btnEvents.setTypeface(fancy);
-        btnImpact.setTypeface(fancy);
-        btnMember.setTypeface(fancy);
+        btnTour.setTypeface(arial);
+        btnEvents.setTypeface(arial);
+        btnImpact.setTypeface(arial);
+        btnMember.setTypeface(arial);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

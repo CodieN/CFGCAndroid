@@ -25,13 +25,12 @@ public class ProjectsActivity extends AppCompatActivity {
         TextView descTV = findViewById(R.id.projectsInfoTextView);
 
         Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
-        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
 
-        titleTV.setTypeface(fancy);
+        titleTV.setTypeface(arial);
         descTV.setTypeface(arial);
-        btnBack.setTypeface(fancy);
-        btnGrants.setTypeface(fancy);
-        btnLegacy.setTypeface(fancy);
+        btnBack.setTypeface(arial);
+        btnGrants.setTypeface(arial);
+        btnLegacy.setTypeface(arial);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

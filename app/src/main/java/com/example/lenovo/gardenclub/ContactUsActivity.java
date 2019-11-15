@@ -24,12 +24,11 @@ public class ContactUsActivity extends AppCompatActivity {
         TextView descTV = findViewById(R.id.contactInfoTextView);
 
         Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
-        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
 
-        titleTV.setTypeface(fancy);
+        titleTV.setTypeface(arial);
         descTV.setTypeface(arial);
-        btnBack.setTypeface(fancy);
-        btnMembersOnly.setTypeface(fancy);
+        btnBack.setTypeface(arial);
+        btnMembersOnly.setTypeface(arial);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

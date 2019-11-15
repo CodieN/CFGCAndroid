@@ -34,11 +34,11 @@ public class MapActivity extends AppCompatActivity {
         Button btnTour = findViewById(R.id.tourButton0);
         TextView titleTV = findViewById(R.id.mapLabelTextView);
 
-        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
+        Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
 
-        titleTV.setTypeface(fancy);
-        btnTour.setTypeface(fancy);
-        btnBelles.setTypeface(fancy);
+        titleTV.setTypeface(arial);
+        btnTour.setTypeface(arial);
+        btnBelles.setTypeface(arial);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

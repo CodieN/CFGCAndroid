@@ -24,12 +24,11 @@ public class MembershipActivity extends AppCompatActivity {
         TextView descTV = findViewById(R.id.historyAndPurposeTextView);
 
         Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
-        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
 
-        titleTV.setTypeface(fancy);
+        titleTV.setTypeface(arial);
         descTV.setTypeface(arial);
-        btnContact.setTypeface(fancy);
-        btnMembersOnly.setTypeface(fancy);
+        btnContact.setTypeface(arial);
+        btnMembersOnly.setTypeface(arial);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

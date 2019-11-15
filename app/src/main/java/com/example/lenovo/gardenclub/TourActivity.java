@@ -24,12 +24,11 @@ public class TourActivity extends AppCompatActivity {
         TextView tourDescTV = findViewById(R.id.tourDescriptionTextView);
 
         Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
-        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
 
-        titleTV.setTypeface(fancy);
+        titleTV.setTypeface(arial);
         tourDescTV.setTypeface(arial);
-        btnMap.setTypeface(fancy);
-        btnBelles.setTypeface(fancy);
+        btnMap.setTypeface(arial);
+        btnBelles.setTypeface(arial);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -23,11 +23,10 @@ public class EventsActivity extends AppCompatActivity {
         TextView descTV = findViewById(R.id.cruiseDescriptionTextView);
 
         Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
-        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
 
-        titleTV.setTypeface(fancy);
+        titleTV.setTypeface(arial);
         descTV.setTypeface(arial);
-        btnBIC.setTypeface(fancy);
+        btnBIC.setTypeface(arial);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
