@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.lenovo.gardenclub">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lenovo.gardenclub">
 
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,20 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/ellipse"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false" />
+        
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -22,6 +35,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".LoginProcess"
+            android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".Contact"/>
         <activity android:name=".ContactList"
                   android:windowSoftInputMode="adjustNothing">
@@ -40,8 +55,18 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".MoreInfo">
-        </activity>
+        <activity android:name=".MoreInfo"/>
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".TourActivity" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".DirectionsActivity" />
+        <activity android:name=".BellesActivity" />
+        <activity android:name=".MembershipActivity" />
+        <activity android:name=".ProjectsActivity" />
+        <activity android:name=".BICActivity" />
+        <activity android:name=".EventsActivity" />
+        <activity android:name=".GrantsActivity" />
+        <activity android:name=".ImpactActivity" />
+        <activity android:name=".LegacyActivity" />
     </application>
-
 </manifest>

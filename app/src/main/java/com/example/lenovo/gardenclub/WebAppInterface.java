@@ -1,10 +1,7 @@
 package com.example.lenovo.gardenclub;
 
 import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
 import android.webkit.JavascriptInterface;
-import android.widget.Toast;
 
 /**
  * Created by Joe on 4/13/2018.

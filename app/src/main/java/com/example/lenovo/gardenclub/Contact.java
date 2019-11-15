@@ -1,19 +1,12 @@
 package com.example.lenovo.gardenclub;
 
-import android.Manifest;
+import android.annotation.SuppressLint;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Parcelable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextThemeWrapper;
@@ -23,6 +16,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -34,9 +30,7 @@ import org.apache.http.StatusLine;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.BufferedHttpEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
@@ -44,12 +38,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
@@ -94,11 +85,12 @@ public class Contact extends AppCompatActivity {
             startActivity(backIntent);
     }
 
-
+    @SuppressLint("StaticFieldLeak")
     class BackgroundTask1 extends AsyncTask<String, Void, String> {
         String json_url;
         private static final String TAG = "BackgroundTask";
-
+        private int count0;
+        private int count1;
 
         @Override
         protected String doInBackground(String... params) {
@@ -124,7 +116,7 @@ public class Contact extends AppCompatActivity {
                         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
                         StringBuilder stringBuilder = new StringBuilder();
                         while ((JSON_STRING = bufferedReader.readLine()) != null) {
-                            stringBuilder.append(JSON_STRING+"\n");
+                            stringBuilder.append(JSON_STRING).append("\n");
                         }
 
 
@@ -136,13 +128,13 @@ public class Contact extends AppCompatActivity {
                     String lastName, spouse, StreetAddress, city, state, CityState;
                     String ZipCode, PrimaryContactNumber, SecondaryContactNumber, BiographicalInfo;
 
-                    final TextView nameTV = (TextView) findViewById(R.id.nameTV);
-                    final TextView mbrStatusTV = (TextView) findViewById(R.id.mbrStatusTV);
-                    final TextView spouseTV = (TextView) findViewById(R.id.spouseTV);
-                    final TextView addressTV = (TextView) findViewById(R.id.addressTV);
-                    final TextView primaryContactTV = (TextView) findViewById(R.id.primaryContactTV);
-                    final TextView secondaryContactTV = (TextView) findViewById(R.id.secondaryContactTV);
-                    final TextView emailTV = (TextView) findViewById(R.id.emailTV);
+                    final TextView nameTV = findViewById(R.id.nameTV);
+                    final TextView mbrStatusTV = findViewById(R.id.mbrStatusTV);
+                    final TextView spouseTV = findViewById(R.id.spouseTV);
+                    final TextView addressTV = findViewById(R.id.addressTV);
+                    final TextView primaryContactTV = findViewById(R.id.primaryContactTV);
+                    final TextView secondaryContactTV = findViewById(R.id.secondaryContactTV);
+                    final TextView emailTV = findViewById(R.id.emailTV);
                     final ImageView imageView = findViewById(R.id.imageView2);
 
                     for (int i = 0; i < jsonArray.length(); i++) {
@@ -196,7 +188,7 @@ public class Contact extends AppCompatActivity {
                                     secondaryContactTV.setText(finalSecondaryContactNumber);
                                     emailTV.setText(finalEmail);
 
-                                    if (finalPhotoID != null && finalPhotoID != "null") {
+                                    if (finalPhotoID != null && !finalPhotoID.equals("null")) {
                                         Glide.with(getApplicationContext())
                                                 .load("http://capefeargardenclub.org/cfgcTestingJSON/images_Testing/images/" + finalPhotoID + ".jpg")
                                                 .apply(RequestOptions.circleCropTransform())
@@ -210,24 +202,19 @@ public class Contact extends AppCompatActivity {
                                     }
 
                                     if (finalEmail.equals(loginEmail)) {
-                                        if (nameTV == null || nameTV.getText() == "null") {
-                                            nameTV.setText("No name is set, tap here to set one.");
-                                        }
-                                        if (spouseTV == null || spouseTV.getText() == "null") {
-                                            spouseTV.setText("No spouse name is set, tap here to set one.");
-                                        }
-                                        if (addressTV == null || addressTV.getText() == "null") {
-                                            addressTV.setText("No address is set, tap here to set one.");
-                                        }
-                                        if (primaryContactTV == null || primaryContactTV.getText() == "null") {
-                                            primaryContactTV.setText("No primary contact is set, tap here to set one.");
-                                        }
-                                        if (secondaryContactTV == null || secondaryContactTV.getText() == "null") {
-                                            secondaryContactTV.setText("No secondary contact is set, tap here to set one.");
-                                        }
+                                        if (nameTV.getText() == "null")
+                                            nameTV.setText(getString(R.string.no_name));
+                                        if (spouseTV.getText() == "null")
+                                            spouseTV.setText(getString(R.string.no_spouse_name));
+                                        if (addressTV.getText() == "null")
+                                            addressTV.setText(getString(R.string.no_address));
+                                        if (primaryContactTV.getText() == "null")
+                                            primaryContactTV.setText(getString(R.string.no_primary));
+                                        if (secondaryContactTV.getText() == "null")
+                                            secondaryContactTV.setText(getString(R.string.no_secondary));
 
                                         final TextView tvEdit = findViewById(R.id.tv_edit);
-                                        tvEdit.setText("Edit");
+                                        tvEdit.setText(getString(R.string.edit));
 
                                         final int nameId = nameTV.getId();
                                         final int spouseId = spouseTV.getId();
@@ -236,7 +223,7 @@ public class Contact extends AppCompatActivity {
                                         final int secId = secondaryContactTV.getId();
                                         final int emailId = emailTV.getId();
 
-                                        AlertDialog alertDialog = null;
+                                        AlertDialog alertDialog;
                                         final AlertDialog.Builder builder;
                                         builder = new AlertDialog.Builder(new ContextThemeWrapper(Contact.this, R.style.myDialog));
                                         View viewAD = getLayoutInflater().inflate(R.layout.dialog_general, null);
@@ -368,7 +355,7 @@ public class Contact extends AppCompatActivity {
 
                                                 if (viewId == nameTV.getId()) {
                                                     viewId_placeholder = viewId;
-                                                    AlertDialog adName = null;
+                                                    AlertDialog adName;
                                                     AlertDialog.Builder builderName;
                                                     builderName = new AlertDialog.Builder(new ContextThemeWrapper(Contact.this, R.style.myDialog));
                                                     View viewName = getLayoutInflater().inflate(R.layout.dialog_name, null);
@@ -544,21 +531,27 @@ public class Contact extends AppCompatActivity {
 
                                         }
                                     });
-
-
-
+                                    count0 = 0;
                                     btnCall.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View view) {
-                                            Intent callIntent = new Intent(Intent.ACTION_CALL);
-                                            callIntent.setData(Uri.parse("tel: " + finalPrimaryContactNumber));
-                                            if (ActivityCompat.checkSelfPermission(Contact.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                                                Intent otherCallIntent = new Intent(Intent.ACTION_DIAL);
-                                                otherCallIntent.setData(Uri.parse("tel: " + finalPrimaryContactNumber));
-                                                startActivity(otherCallIntent);
-                                                return;
+                                            count0++;
+                                            FragmentManager fm = getFragmentManager();
+                                            if(count0 % 2 == 1) {
+                                                FragmentTransaction ft = fm.beginTransaction();
+                                                Bundle b = new Bundle();
+                                                b.putString("prim", finalPrimaryContactNumber);
+                                                b.putString("sec", finalSecondaryContactNumber);
+                                                CallFragment callFrag = new CallFragment();
+                                                callFrag.setArguments(b);
+                                                ft.replace(R.id.fragFrame, callFrag);
+                                                ft.commit();
+                                            } else {
+                                                Fragment f = fm.findFragmentById(R.id.fragFrame);
+                                                FragmentTransaction ft = fm.beginTransaction();
+                                                ft.remove(f);
+                                                ft.commit();
                                             }
-                                            startActivity(callIntent);
                                         }
                                     });
 
@@ -576,12 +569,27 @@ public class Contact extends AppCompatActivity {
                                         }
                                     });
 
+                                    count1 = 0;
                                     btnText.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View view) {
-                                            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-                                            sendIntent.setData(Uri.parse("sms: " + finalPrimaryContactNumber));
-                                            startActivity(sendIntent);
+                                            count1++;
+                                            FragmentManager fm = getFragmentManager();
+                                            if(count1 % 2 == 1) {
+                                                FragmentTransaction ft = fm.beginTransaction();
+                                                Bundle b = new Bundle();
+                                                b.putString("prim", finalPrimaryContactNumber);
+                                                b.putString("sec", finalSecondaryContactNumber);
+                                                TextFragment textFrag = new TextFragment();
+                                                textFrag.setArguments(b);
+                                                ft.replace(R.id.fragFrame, textFrag);
+                                                ft.commit();
+                                            } else {
+                                                Fragment f = fm.findFragmentById(R.id.fragFrame);
+                                                FragmentTransaction ft = fm.beginTransaction();
+                                                ft.remove(f);
+                                                ft.commit();
+                                            }
                                         }
                                     });
                                 }
@@ -718,7 +726,4 @@ public class Contact extends AppCompatActivity {
             }
         }
     }
-
 }
-
-
