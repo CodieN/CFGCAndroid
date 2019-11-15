@@ -1,9 +1,11 @@
 package com.example.lenovo.gardenclub;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +20,16 @@ public class MembershipActivity extends AppCompatActivity {
         Button btnHome = findViewById(R.id.homeButton8);
         Button btnContact = findViewById(R.id.contactUsButton);
         Button btnMembersOnly = findViewById(R.id.membersOnlyButton0);
+        TextView titleTV = findViewById(R.id.membershipLabelTextView);
+        TextView descTV = findViewById(R.id.historyAndPurposeTextView);
+
+        Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
+        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
+
+        titleTV.setTypeface(fancy);
+        descTV.setTypeface(arial);
+        btnContact.setTypeface(fancy);
+        btnMembersOnly.setTypeface(fancy);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

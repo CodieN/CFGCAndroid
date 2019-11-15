@@ -2,6 +2,7 @@ package com.example.lenovo.gardenclub;
 
 import android.app.Fragment;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -20,6 +21,7 @@ public class TextFragment extends Fragment {
         final String sec = getArguments().getString("sec");
         Button btnTextPrimary = view.findViewById(R.id.primaryButton);
         Button btnTextSec = view.findViewById(R.id.secondaryButton);
+
         if (prim != null && !prim.equals("null"))
             btnTextPrimary.setOnClickListener(new View.OnClickListener() {
                 @Override

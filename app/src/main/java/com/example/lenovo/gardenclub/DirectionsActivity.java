@@ -1,6 +1,7 @@
 package com.example.lenovo.gardenclub;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,14 @@ public class DirectionsActivity extends AppCompatActivity {
         TextView descTV = findViewById(R.id.descriptionTV);
         Button btnGetDir = findViewById(R.id.getDirectionsButton);
         Button btnBack = findViewById(R.id.backButton);
+
+        Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
+        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
+
+        titleTV.setTypeface(fancy);
+        descTV.setTypeface(arial);
+        btnGetDir.setTypeface(fancy);
+        btnBack.setTypeface(fancy);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,9 +1,11 @@
 package com.example.lenovo.gardenclub;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +21,17 @@ public class ProjectsActivity extends AppCompatActivity {
         Button btnBack = findViewById(R.id.backButton0);
         Button btnGrants = findViewById(R.id.grantsButton1);
         Button btnLegacy = findViewById(R.id.legacyButton1);
+        TextView titleTV = findViewById(R.id.projectsLabelTextView);
+        TextView descTV = findViewById(R.id.projectsInfoTextView);
+
+        Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
+        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
+
+        titleTV.setTypeface(fancy);
+        descTV.setTypeface(arial);
+        btnBack.setTypeface(fancy);
+        btnGrants.setTypeface(fancy);
+        btnLegacy.setTypeface(fancy);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

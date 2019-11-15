@@ -1,6 +1,7 @@
 package com.example.lenovo.gardenclub;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
         Button btnEvents = findViewById(R.id.eventsButtonOnHomePage);
         Button btnImpact = findViewById(R.id.impactButtonOnHomePage);
         Button btnMember = findViewById(R.id.membershipButtonOnHomePage);
+
+        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
+
+        btnTour.setTypeface(fancy);
+        btnEvents.setTypeface(fancy);
+        btnImpact.setTypeface(fancy);
+        btnMember.setTypeface(fancy);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

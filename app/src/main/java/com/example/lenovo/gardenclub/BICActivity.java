@@ -1,9 +1,11 @@
 package com.example.lenovo.gardenclub;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +19,15 @@ public class BICActivity extends AppCompatActivity {
         setContentView(R.layout.activity_battery_island_committee);
         Button btnHome = findViewById(R.id.homeButton3);
         Button btnBack = findViewById(R.id.backButton);
+        TextView titleTV = findViewById(R.id.committeeLabelTextView);
+        TextView descTV = findViewById(R.id.committeeInfoTextView);
+
+        Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
+        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
+
+        titleTV.setTypeface(fancy);
+        descTV.setTypeface(arial);
+        btnBack.setTypeface(fancy);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

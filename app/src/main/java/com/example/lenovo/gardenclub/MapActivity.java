@@ -2,9 +2,11 @@ package com.example.lenovo.gardenclub;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +32,13 @@ public class MapActivity extends AppCompatActivity {
         Button btnHome = findViewById(R.id.homeButton11);
         Button btnBelles = findViewById(R.id.bellesButton1);
         Button btnTour = findViewById(R.id.tourButton0);
+        TextView titleTV = findViewById(R.id.mapLabelTextView);
+
+        Typeface fancy = Typeface.createFromAsset(getAssets(), "organic_elements.ttf");
+
+        titleTV.setTypeface(fancy);
+        btnTour.setTypeface(fancy);
+        btnBelles.setTypeface(fancy);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
