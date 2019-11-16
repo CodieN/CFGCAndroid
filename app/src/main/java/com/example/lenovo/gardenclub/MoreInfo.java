@@ -51,7 +51,6 @@ public class MoreInfo extends AppCompatActivity {
         firstName = getIntent().getExtras().getString("firstName").trim();
         lastName = getIntent().getExtras().getString("lastName").trim();
         setContentView(R.layout.activity_more_info);
-        getSupportActionBar().hide();
 
         JSONObject JO;
 

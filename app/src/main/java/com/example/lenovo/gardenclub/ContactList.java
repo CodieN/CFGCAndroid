@@ -52,8 +52,6 @@ public class ContactList extends AppCompatActivity {
         loginEmail = getIntent().getExtras().getString("login_email").trim();
         intent.putExtra("json_data", json_string);
 
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-
         nameSortToggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {

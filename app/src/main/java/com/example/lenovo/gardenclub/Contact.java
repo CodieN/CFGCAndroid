@@ -71,7 +71,6 @@ public class Contact extends AppCompatActivity {
         String json_data = getIntent().getExtras().getString("json_data");
         backIntent = new Intent(this, ContactList.class);
         backIntent.putExtra("json_data", json_data);
-        getSupportActionBar().hide();
         tvMoreInfo = findViewById(R.id.tv_more_info);
         tvBack = findViewById(R.id.tv_back);
 
