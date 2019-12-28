@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -23,6 +24,7 @@ public class DirectionsActivity extends AppCompatActivity {
         Button btnHome = findViewById(R.id.homeButton12);
         TextView titleTV = findViewById(R.id.titleTV);
         TextView descTV = findViewById(R.id.descriptionTV);
+        ImageView garden = findViewById(R.id.gardenIV);
         Button btnGetDir = findViewById(R.id.getDirectionsButton);
         Button btnBack = findViewById(R.id.backButton);
 
@@ -52,6 +54,7 @@ public class DirectionsActivity extends AppCompatActivity {
         switch(marker) {
             case "RC":
                 descTV.setText(R.string.rc_marker);
+                garden.setImageResource(R.drawable.ribboncutting);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -66,6 +69,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "1":
                 titleTV.setText(R.string.about1);
                 descTV.setText(R.string.marker_1);
+                garden.setImageResource(R.drawable.garden1);
                 btnGetDir.setText(R.string.get_directions_to_marker_1);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -81,6 +85,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "2":
                 titleTV.setText(R.string.about2);
                 descTV.setText(R.string.marker_2);
+                garden.setImageResource(R.drawable.garden2);
                 btnGetDir.setText(R.string.get_directions_to_marker_2);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -96,6 +101,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "3":
                 titleTV.setText(R.string.about3);
                 descTV.setText(R.string.marker_3);
+                garden.setImageResource(R.drawable.garden3);
                 btnGetDir.setText(R.string.get_directions_to_marker_3);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -111,6 +117,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "4":
                 titleTV.setText(R.string.about4);
                 descTV.setText(R.string.marker_4);
+                garden.setImageResource(R.drawable.garden4);
                 btnGetDir.setText(R.string.get_directions_to_marker_4);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -126,6 +133,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "5":
                 titleTV.setText(R.string.about5);
                 descTV.setText(R.string.marker_5);
+                garden.setImageResource(R.drawable.garden5);
                 btnGetDir.setText(R.string.get_directions_to_marker_5);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -141,6 +149,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "6":
                 titleTV.setText(R.string.about6);
                 descTV.setText(R.string.marker_6);
+                garden.setImageResource(R.drawable.garden6);
                 btnGetDir.setText(R.string.get_directions_to_marker_6);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -156,6 +165,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "7":
                 titleTV.setText(R.string.about7);
                 descTV.setText(R.string.marker_7);
+                garden.setImageResource(R.drawable.garden7);
                 btnGetDir.setText(R.string.get_directions_to_marker_7);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -171,6 +181,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "8":
                 titleTV.setText(R.string.about8);
                 descTV.setText(R.string.marker_8);
+                garden.setImageResource(R.drawable.garden8);
                 btnGetDir.setText(R.string.get_directions_to_marker_8);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -186,6 +197,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "9":
                 titleTV.setText(R.string.about9);
                 descTV.setText(R.string.marker_9);
+                garden.setImageResource(R.drawable.garden9);
                 btnGetDir.setText(R.string.get_directions_to_marker_9);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -201,6 +213,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "10":
                 titleTV.setText(R.string.about10);
                 descTV.setText(R.string.marker_10);
+                garden.setImageResource(R.drawable.garden10);
                 btnGetDir.setText(R.string.get_directions_to_marker_10);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -216,6 +229,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "11":
                 titleTV.setText(R.string.about11);
                 descTV.setText(R.string.marker_11);
+                garden.setImageResource(R.drawable.garden11a);
                 btnGetDir.setText(R.string.get_directions_to_marker_11);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -231,6 +245,7 @@ public class DirectionsActivity extends AppCompatActivity {
             case "12":
                 titleTV.setText(R.string.about12);
                 descTV.setText(R.string.marker_12);
+                garden.setImageResource(R.drawable.garden12);
                 btnGetDir.setText(R.string.get_directions_to_marker_12);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
