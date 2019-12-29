@@ -448,43 +448,57 @@
     </string>
     <string name="back_to_the_map">Back to the Map</string>
     <string name="about">
-        Ribbon Cutting Garden
+        Ribbon Cutting Garden:
+        \nTom &amp; Kate Fetzer
     </string>
     <string name="about1">
-        Garden 1
+        Garden 1:
+        \nJames &amp; Frances Parnell
     </string>
     <string name="about2">
-        Garden 2
+        Garden 2:
+        \nDrs. Jeff Warhaftig &amp; Amanda Trimpey
     </string>
     <string name="about3">
-        Garden 3
+        Garden 3:
+        \nAirlie Garden with Lebanon Chapel
     </string>
     <string name="about4">
-        Garden 4
+        Garden 4:
+        \nHarbor Way Gardens
     </string>
     <string name="about5">
-        Garden 5
+        Garden 5:
+        \nMarcia Pendleton Doering
     </string>
     <string name="about6">
-        Garden 6
+        Garden 6:
+        \nDan Thorpe &amp; Anne Beck
     </string>
     <string name="about7">
-        Garden 7
+        Garden 7:
+        \nErin &amp; Dustin RT Sullivan
     </string>
     <string name="about8">
-        Garden 8
+        Garden 8:
+        \nScotty &amp; Kenton Sanders
     </string>
     <string name="about9">
-        Garden 9
+        Garden 9:
+        \nKaren &amp; Auley Crouch
     </string>
     <string name="about10">
-        Garden 10
+        Garden 10:
+        \nDonna Launey &amp; Patrick Tester
     </string>
     <string name="about11">
-        Garden 11
+        Garden 11:
+        \nA: Chris Gore &amp; Matthew TenHuisen
+        \nB: Josephine TenHuisen
     </string>
     <string name="about12">
-        Garden 12
+        Garden 12:
+        \nSusan Wilson
     </string>
     <string name="rc_marker">
         Our 67th Azalea Garden Tour opens with the spectacular Ribbon Cutting Ceremony. This event
@@ -806,5 +820,32 @@
         space for the outdoor lover, lives up to that belief.
 
         \n\n<b>Parking:</b>  Please park on the marked side of the street only.
+    </string>
+    <string name="gardening_a_personal_experience_april_3_4_and_5_2020_ribbon_cutting_ceremony_and_azalea_queen_s_garden_party_is_friday_april_3_2020_at_10_00am_tickets_are_35_and_good_for_all_three_days_children_under_12_are_admitted_free_with_a_paid_adult_tickets_may_be_purchased_at_our_garden_tour_ticket_partners_at_each_garden_during_the_tour_and_online_at_www_azaleagardentour_org_gardens_are_open_10_00am_until_5_00pm_daily_unless_otherwise_noted_please_check_each_garden_listing_for_exact_details_reminder_grounds_and_walkways_may_be_uneven_please_be_aware_and_watch_your_step_wear_comfortable_and_secure_shoes_some_steps_may_not_have_railings_for_the_latest_information_and_any_weather_related_updates_please_check_the_azalea_garden_tour_website_www_azaleagardentour_org_an_official_featured_event_of_the_north_carolina_azalea_festival_essential_parking_tips_as_you_enter_many_of_our_neighborhoods_parking_will_only_be_allowed_on_one_side_of_the_street_please_observe_the_no_parking_signs_to_avoid_congestion_and_keep_traffic_moving_smoothly_please_be_courteous_and_thoughtful_when_parking_park_only_on_the_pavement_not_on_the_grass_avoid_parking_anywhere_traffic_cones_have_been_set_we_would_like_everyone_to_enjoy_the_tour_please_no_pets_allowed">
+        Gardening…A Personal Experience
+        \nApril 3, 4, and 5, 2020
+
+        \n\nRibbon Cutting Ceremony and Azalea Queen’s Garden Party is Friday, April 3, 2020 at 10:00am.
+        \nTickets are $35 and good for all three days.
+        \nChildren under 12 are admitted free with a paid adult.
+        \nTickets may be purchased at our Garden Tour Ticket partners, at each garden during the
+        tour and online at www.AzaleaGardenTour.org.
+
+        \n\nGardens are open 10:00am until 5:00pm daily unless otherwise noted.
+        \nPlease check each garden listing for exact details.
+        \nReminder: Grounds and walkways may be uneven. Please be aware and watch your step, wear
+        comfortable and secure shoes. Some steps may not have railings. For the latest information
+        and any weather related updates, please check the Azalea Garden Tour website:
+        www.AzaleaGardenTour.org
+
+        \n\nAn official featured event of the North Carolina Azalea Festival
+
+        \n\nESSENTIAL PARKING TIPS:
+        \nAs you enter many of our neighborhoods, parking will ONLY be allowed on one side of the
+        street. Please observe the NO PARKING signs to avoid congestion and keep traffic moving
+        smoothly. Please be courteous and thoughtful when parking. Park only on the pavement, not on
+        the grass. Avoid parking anywhere traffic cones have been set. We would like everyone to
+        enjoy the tour.
+        \nPLEASE, NO PETS ALLOWED.
     </string>
 </resources>

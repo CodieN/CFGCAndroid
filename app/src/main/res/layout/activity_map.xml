@@ -97,16 +97,47 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline35"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mapLabelTextView">
 
         <fragment
-            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="230dp" />
 
     </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16">
+
+        <TextView
+            android:id="@+id/descTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gardening_a_personal_experience_april_3_4_and_5_2020_ribbon_cutting_ceremony_and_azalea_queen_s_garden_party_is_friday_april_3_2020_at_10_00am_tickets_are_35_and_good_for_all_three_days_children_under_12_are_admitted_free_with_a_paid_adult_tickets_may_be_purchased_at_our_garden_tour_ticket_partners_at_each_garden_during_the_tour_and_online_at_www_azaleagardentour_org_gardens_are_open_10_00am_until_5_00pm_daily_unless_otherwise_noted_please_check_each_garden_listing_for_exact_details_reminder_grounds_and_walkways_may_be_uneven_please_be_aware_and_watch_your_step_wear_comfortable_and_secure_shoes_some_steps_may_not_have_railings_for_the_latest_information_and_any_weather_related_updates_please_check_the_azalea_garden_tour_website_www_azaleagardentour_org_an_official_featured_event_of_the_north_carolina_azalea_festival_essential_parking_tips_as_you_enter_many_of_our_neighborhoods_parking_will_only_be_allowed_on_one_side_of_the_street_please_observe_the_no_parking_signs_to_avoid_congestion_and_keep_traffic_moving_smoothly_please_be_courteous_and_thoughtful_when_parking_park_only_on_the_pavement_not_on_the_grass_avoid_parking_anywhere_traffic_cones_have_been_set_we_would_like_everyone_to_enjoy_the_tour_please_no_pets_allowed"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
