@@ -81,7 +81,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=6315+Old+Military+Road+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=6451+Quail+Run+Road+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -97,7 +97,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=6451+Quail+Run+Road+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=6315+Old+Military+Road+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -129,7 +129,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=510+Grace+Street+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=Seawater+Lane+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -145,7 +145,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=1710+Chestnut+Street+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=6309+Pintail+Court+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -161,7 +161,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=1708+Chestnut+Street+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=707+Colonial+Drive+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -177,7 +177,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=1711+Princess+Street+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=314+Colonial+Drive+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -193,7 +193,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=707+Colonial+Drive+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=1710+Chestnut+Street+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -209,7 +209,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=314+Colonial+Drive+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=1708+Chestnut+Street+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -225,7 +225,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=5024+Split+Rail+Road+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=1711+Princess+Street+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -246,7 +246,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=6309+Pin+Tail+Court+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=512+Grace+Street+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -262,7 +262,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=34.215712,-77.807243&mode=d");
+                        uri = Uri.parse("google.navigation:q=5024+Split+Rail+Drive+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
