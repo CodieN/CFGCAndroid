@@ -121,7 +121,7 @@ public class MapActivity extends AppCompatActivity {
                 googleMap.addMarker(new MarkerOptions().position(latLng10).title("10").icon(BitmapDescriptorFactory.fromBitmap(bmp10)));
                 googleMap.addMarker(new MarkerOptions().position(latLng11).title("11").icon(BitmapDescriptorFactory.fromBitmap(bmp11)));
                 googleMap.addMarker(new MarkerOptions().position(latLng12).title("12").icon(BitmapDescriptorFactory.fromBitmap(bmp12)));
-                float zoomLevel = 16.0f;
+                float zoomLevel = 10.0f;
                 googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLngRC, zoomLevel));
                 GoogleMapOptions gMO = new GoogleMapOptions();
                 gMO.mapToolbarEnabled(false);
