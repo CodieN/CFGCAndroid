@@ -22,14 +22,11 @@ public class DirectionsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_directions);
-        ConstraintLayout cL = findViewById(R.id.ConstraintLayout);
-        ConstraintSet cS = new ConstraintSet();
         String marker = getIntent().getStringExtra("marker");
         Button btnHome = findViewById(R.id.homeButton12);
         TextView titleTV = findViewById(R.id.titleTV);
         TextView descTV = findViewById(R.id.descriptionTV);
         ImageView garden = findViewById(R.id.gardenIV);
-        ImageView garden2 = findViewById(R.id.gardenIV2);
         Button btnGetDir = findViewById(R.id.getDirectionsButton);
         Button btnBack = findViewById(R.id.backButton);
 
@@ -55,8 +52,6 @@ public class DirectionsActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-        cS.clone(cL);
 
         switch(marker) {
             case "RC":
@@ -237,11 +232,6 @@ public class DirectionsActivity extends AppCompatActivity {
                 titleTV.setText(R.string.about11);
                 descTV.setText(R.string.marker_11);
                 garden.setImageResource(R.drawable.garden11a);
-                garden2.setVisibility(View.VISIBLE);
-                garden2.setImageResource(R.drawable.garden11b);
-                cS.clear(R.id.gardenIV, ConstraintSet.RIGHT);
-                cS.connect(R.id.gardenIV, ConstraintSet.RIGHT, R.id.guideline12, ConstraintSet.LEFT);
-                cS.applyTo(cL);
                 btnGetDir.setText(R.string.get_directions_to_marker_11);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
