@@ -70,18 +70,18 @@ public class MapActivity extends AppCompatActivity {
             @Override
             public void onMapReady(GoogleMap googleMap) {
                 LatLng latLngRC = new LatLng(34.191113, -77.838259);
-                LatLng latLng1 = new LatLng(34.191070, -77.835086);
-                LatLng latLng2 = new LatLng(34.191914, -77.837565);
+                LatLng latLng1 = new LatLng(34.191874, -77.837544);
+                LatLng latLng2 = new LatLng(34.191052, -77.835065);
                 LatLng latLng3 = new LatLng(34.214952, -77.828157);
-                LatLng latLng4 = new LatLng(34.239208, -77.943111);
-                LatLng latLng5 = new LatLng(34.239137, -77.926989);
-                LatLng latLng6 = new LatLng(34.239108, -77.927202);
-                LatLng latLng7 = new LatLng(34.238595, -77.926464);
-                LatLng latLng8 = new LatLng(34.228586, -77.912327);
-                LatLng latLng9 = new LatLng(34.234054, -77.912885);
-                LatLng latLng10 = new LatLng(34.151580, -77.902439);
-                LatLng latLng11 = new LatLng(34.233283, -77.852662);
-                LatLng latLng12 = new LatLng(34.215712, -77.807243);
+                LatLng latLng4 = new LatLng(34.215712, -77.807243);
+                LatLng latLng5 = new LatLng(34.233283, -77.852662);
+                LatLng latLng6 = new LatLng(34.228586, -77.912327);
+                LatLng latLng7 = new LatLng(34.234054, -77.912885);
+                LatLng latLng8 = new LatLng(34.239137, -77.926989);
+                LatLng latLng9 = new LatLng(34.239108, -77.927202);
+                LatLng latLng10 = new LatLng(34.238595, -77.926464);
+                LatLng latLng11 = new LatLng(34.239208, -77.943111);
+                LatLng latLng12 = new LatLng(34.151580, -77.902439);
                 IconGenerator icRC = new IconGenerator(getApplicationContext());
                 IconGenerator ic1 = new IconGenerator(getApplicationContext());
                 IconGenerator ic2 = new IconGenerator(getApplicationContext());
