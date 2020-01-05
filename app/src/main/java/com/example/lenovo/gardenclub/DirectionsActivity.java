@@ -29,6 +29,8 @@ public class DirectionsActivity extends AppCompatActivity {
         ImageView garden = findViewById(R.id.gardenIV);
         Button btnGetDir = findViewById(R.id.getDirectionsButton);
         Button btnBack = findViewById(R.id.backButton);
+        ConstraintSet cs = new ConstraintSet();
+        ConstraintLayout cL = findViewById(R.id.cL);
 
         Typeface arial = Typeface.createFromAsset(getAssets(), "arial.ttf");
 
@@ -60,7 +62,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("google.navigation:q=6417+Quail+Run+Road+Wilmington,+North+Carolina&mode=d");
+                        uri = Uri.parse("google.navigation:q=314+Pine+Grove+Drive+Wilmington,+North+Carolina&mode=d");
                         i = new Intent(Intent.ACTION_VIEW, uri);
                         i.setPackage("com.google.android.apps.maps");
                         if(i.resolveActivity(getPackageManager()) != null)
@@ -72,6 +74,8 @@ public class DirectionsActivity extends AppCompatActivity {
                 titleTV.setText(R.string.about1);
                 descTV.setText(R.string.marker_1);
                 garden.setImageResource(R.drawable.garden1);
+                cs.clone(cL);
+
                 btnGetDir.setText(R.string.get_directions_to_marker_1);
                 btnGetDir.setOnClickListener(new View.OnClickListener() {
                     @Override
