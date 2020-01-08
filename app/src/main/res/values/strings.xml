@@ -395,7 +395,7 @@
     </string>
     <string name="directions">Directions</string>
     <string name="textview">TextView</string>
-    <string name="get_directions_to_ribbon_cutting_opens_google_maps">Get Directions to Ribbon Cutting Buses</string>
+    <string name="get_directions_to_ribbon_cutting_opens_google_maps">Get Directions to Ribbon Cutting Buses\n(Friday Only)</string>
     <string name="get_directions_to_marker_1">Get Directions to Garden 1 Buses</string>
     <string name="friday">Friday</string>
     <string name="saturday_sunday">Saturday/Sunday</string>
@@ -812,4 +812,6 @@
         enjoy the tour.
         \nPLEASE, NO PETS ALLOWED.
     </string>
+    <string name="todo">TODO</string>
+    <string name="todoo">TODO</string>
 </resources>

@@ -27,7 +27,7 @@
         android:background="@drawable/rounded_layout_item_settings"
         android:clickable="false"
         android:focusable="auto"
-        android:text="@string/about"
+        android:text="@string/about10"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/homeButton12" />
 
     <Button
-        android:id="@+id/getDirectionsButton"
+        android:id="@+id/fButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
@@ -45,8 +45,9 @@
         android:background="@drawable/black_border_background_settings"
         android:clickable="true"
         android:focusable="true"
+        android:lines="2"
         android:singleLine="false"
-        android:text="Get Directions to Ribbon Cutting Buses"
+        android:text="@string/get_directions_to_marker_10"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
@@ -54,7 +55,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+        app:layout_constraintTop_toBottomOf="@+id/guideline8" />
 
     <Button
         android:id="@+id/backButton"
@@ -87,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.83" />
+        app:layout_constraintGuide_percent="0.84" />
 
     <ImageView
         android:id="@+id/gardenIV"
@@ -103,7 +104,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titleTV"
-        app:srcCompat="@drawable/ribboncutting" />
+        app:srcCompat="@drawable/ribboncutting"
+        android:contentDescription="@string/todo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
@@ -139,5 +141,48 @@
             android:textColor="#000000"
             android:textSize="18sp" />
     </ScrollView>
+
+    <TextView
+        android:id="@+id/dLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_layout_item_settings"
+        android:text="@string/get_directions_to_marker_10"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <Button
+        android:id="@+id/sButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/black_border_background_settings"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/saturday_sunday"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/fButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/fButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
