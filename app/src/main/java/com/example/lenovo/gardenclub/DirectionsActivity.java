@@ -3,7 +3,9 @@ package com.example.lenovo.gardenclub;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -33,7 +35,6 @@ public class DirectionsActivity extends AppCompatActivity {
         Button btnS = findViewById(R.id.sButton);
         Button btnBack = findViewById(R.id.backButton);
         Guideline g8 = findViewById(R.id.guideline8);
-        Guideline g10 = findViewById(R.id.guideline10);
         ConstraintSet cs = new ConstraintSet();
         ConstraintLayout cL = findViewById(R.id.cL);
 
@@ -68,9 +69,17 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.rc_marker);
                 garden.setImageResource(R.drawable.ribboncutting);
                 g8.setGuidelinePercent(0.83f);
-                g10.setGuidelinePercent(0.59f);
-                btnF.setText(R.string.get_directions_to_ribbon_cutting_opens_google_maps);
-                btnF.setTextSize(18.0f);
+                btnF.setText(R.string.fridayOnly);
+                dLabel.setText(R.string.get_directions_to_ribbon_cutting_opens_google_maps);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                    dLabel.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(20.0f);
+                    dLabel.setTextSize(20.0f);
+                }
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -86,8 +95,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 titleTV.setText(R.string.about1);
                 descTV.setText(R.string.marker_1);
                 garden.setImageResource(R.drawable.garden1);
-                g8.setGuidelinePercent(0.78f);
-                g10.setGuidelinePercent(0.55f);
+                g8.setGuidelinePercent(0.80f);
                 cs.clone(cL);
                 cs.clear(btnF.getId(), ConstraintSet.END);
                 cs.clear(btnF.getId(), ConstraintSet.TOP);
@@ -101,9 +109,18 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnF.setText(R.string.friday);
                 dLabel.setText(R.string.get_directions_to_marker_1);
                 btnS.setText(R.string.saturday_sunday);
-                btnF.setTextSize(22.0f);
-                dLabel.setTextSize(22.0f);
-                btnS.setTextSize(22.0f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                    dLabel.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                    btnS.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(22.0f);
+                    dLabel.setTextSize(22.0f);
+                    btnS.setTextSize(22.0f);
+                }
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -129,8 +146,7 @@ public class DirectionsActivity extends AppCompatActivity {
                 titleTV.setText(R.string.about2);
                 descTV.setText(R.string.marker_2);
                 garden.setImageResource(R.drawable.garden2);
-                g8.setGuidelinePercent(0.78f);
-                g10.setGuidelinePercent(0.55f);
+                g8.setGuidelinePercent(0.80f);
                 cs.clone(cL);
                 cs.clear(btnF.getId(), ConstraintSet.END);
                 cs.clear(btnF.getId(), ConstraintSet.TOP);
@@ -144,9 +160,18 @@ public class DirectionsActivity extends AppCompatActivity {
                 btnF.setText(R.string.friday);
                 dLabel.setText(getString(R.string.get_directions_to_marker_2));
                 btnS.setText(R.string.saturday_sunday);
-                btnF.setTextSize(22.0f);
-                dLabel.setTextSize(22.0f);
-                btnS.setTextSize(22.0f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                    dLabel.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                    btnS.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(22.0f);
+                    dLabel.setTextSize(22.0f);
+                    btnS.setTextSize(22.0f);
+                }
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -173,9 +198,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_3);
                 garden.setImageResource(R.drawable.garden3);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_3);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -192,9 +221,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_4);
                 garden.setImageResource(R.drawable.garden4);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_4);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -211,9 +244,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_5);
                 garden.setImageResource(R.drawable.garden5);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_5);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -230,9 +267,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_6);
                 garden.setImageResource(R.drawable.garden6);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_6);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -249,9 +290,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_7);
                 garden.setImageResource(R.drawable.garden7);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_7);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -268,9 +313,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_8);
                 garden.setImageResource(R.drawable.garden8);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_8);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -287,9 +336,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_9);
                 garden.setImageResource(R.drawable.garden9);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_9);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -306,9 +359,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_10);
                 garden.setImageResource(R.drawable.garden10);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_10);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -325,9 +382,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_11);
                 garden.setImageResource(R.drawable.garden11a);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_11);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -344,9 +405,13 @@ public class DirectionsActivity extends AppCompatActivity {
                 descTV.setText(R.string.marker_12);
                 garden.setImageResource(R.drawable.garden12);
                 g8.setGuidelinePercent(0.84f);
-                g10.setGuidelinePercent(0.60f);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    btnF.setAutoSizeTextTypeUniformWithConfiguration(16, 24,
+                            2, TypedValue.COMPLEX_UNIT_DIP);
+                } else {
+                    btnF.setTextSize(24.0f);
+                }
                 btnF.setText(R.string.get_directions_to_marker_12);
-                btnF.setTextSize(22.0f);
                 btnF.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

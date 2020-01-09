@@ -395,10 +395,11 @@
     </string>
     <string name="directions">Directions</string>
     <string name="textview">TextView</string>
-    <string name="get_directions_to_ribbon_cutting_opens_google_maps">Get Directions to Ribbon Cutting Buses\n(Friday Only)</string>
+    <string name="get_directions_to_ribbon_cutting_opens_google_maps">Get Directions to Ribbon Cutting Buses</string>
     <string name="get_directions_to_marker_1">Get Directions to Garden 1 Buses</string>
     <string name="friday">Friday</string>
-    <string name="saturday_sunday">Sat-Sun</string>
+    <string name="fridayOnly">Press Here For Friday Only Directions</string>
+    <string name="saturday_sunday">Saturday/Sunday</string>
     <string name="get_directions_to_marker_2">Get Directions to Garden 2 Buses</string>
     <string name="get_directions_to_marker_3">Get Directions to Garden 3</string>
     <string name="get_directions_to_marker_4">Get Directions to Garden 4</string>
